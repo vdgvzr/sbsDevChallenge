@@ -1,4 +1,4 @@
-dateModified: 1678452811
+dateModified: 1678453197
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: 'SBS Cladding'
@@ -8,6 +8,19 @@ meta:
     2f6f7a07-cfba-4216-afc8-3caffb35601f: 'SBS Cladding' # SBS Cladding
     4450d7fc-db6c-447a-bd41-b211a5409cae: Common # Common
     99730f49-95cc-4e23-bb23-a070e5787866: 'SBS Cladding' # SBS Cladding
+plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
 system:
   edition: solo
   live: true
