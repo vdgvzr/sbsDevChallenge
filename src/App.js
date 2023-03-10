@@ -36,8 +36,8 @@ export default class App extends Component {
 
     render() {
         return(
-            <div>
-                Hello World!
+            <div className=''>
+                <div className=''>Hello World!</div>
             </div>
         )
     }
