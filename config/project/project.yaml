@@ -1,0 +1,22 @@
+dateModified: 1678452811
+email:
+  fromEmail: shaunlindsley@gmail.com
+  fromName: 'SBS Cladding'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    2f6f7a07-cfba-4216-afc8-3caffb35601f: 'SBS Cladding' # SBS Cladding
+    4450d7fc-db6c-447a-bd41-b211a5409cae: Common # Common
+    99730f49-95cc-4e23-bb23-a070e5787866: 'SBS Cladding' # SBS Cladding
+system:
+  edition: solo
+  live: true
+  name: 'SBS Cladding'
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

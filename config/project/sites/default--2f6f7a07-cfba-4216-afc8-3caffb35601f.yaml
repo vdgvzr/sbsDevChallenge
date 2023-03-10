@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'SBS Cladding'
+primary: true
+siteGroup: 99730f49-95cc-4e23-bb23-a070e5787866 # SBS Cladding
+sortOrder: 1
