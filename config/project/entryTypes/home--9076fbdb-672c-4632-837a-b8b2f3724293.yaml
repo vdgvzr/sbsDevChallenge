@@ -58,7 +58,7 @@ fieldLayouts:
         uid: a9c89f3d-0ee6-4c71-bcc8-eb2a4f8fd02c
         userCondition: null
 handle: home
-hasTitleField: false
+hasTitleField: true
 name: Home
 section: b92139d8-6cdf-488e-9aa8-3218ca6c2071 # Home
 sortOrder: 1

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Layout from './components/layouts/Layout'
+import Page from './components/pages/Page'
 
 export default class App extends Component {
     constructor(props) {
@@ -36,9 +38,9 @@ export default class App extends Component {
 
     render() {
         return(
-            <div className=''>
-                <div className=''>Hello World!</div>
-            </div>
+            <Layout site={this.state.site}>
+                <Page page={this.state.page}/>
+            </Layout>
         )
     }
 }

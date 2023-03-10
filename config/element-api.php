@@ -60,6 +60,8 @@ function transformContentMain(Entry $entry){
     return $matrixBlocks;
 }
 
+$pageData = [];
+
 return [
     'endpoints' => [
         /** 
@@ -76,17 +78,17 @@ return [
                     $singleSections = ArrayHelper::where(\Craft::$app->sections->getAllSections(), 
                     'type', Section::TYPE_SINGLE);
 
-                    $pages = Entry::find()
+                    $singles = Entry::find()
                         ->sectionId(ArrayHelper::getColumn($singleSections, 'id'))
                         ->all();
 
-                    $pageData = [];
-
-                    foreach ($pages as $page) {
+                    
+                    foreach ($singles as $page) {
                         $pageData[] = [
                             'title' => $page->title,
                             'url' => $page->url,
-                            'jsonUrl' => UrlHelper::url("{$page->slug}.json"),
+                            'slug' => $page->slug,
+                            'jsonUrl' => UrlHelper::url("{$page->slug}.json")
                         ];
                     }
 
@@ -114,6 +116,7 @@ return [
                 'criteria' => ['slug' => 'home'],
                 'transformer' => function(Entry $entry) {
                     return [
+                        'title' => $entry->title,
                         'homepageHeader' => transformHomepageHeader($entry),
                         'contentMain' => transformContentMain($entry),
                     ];
