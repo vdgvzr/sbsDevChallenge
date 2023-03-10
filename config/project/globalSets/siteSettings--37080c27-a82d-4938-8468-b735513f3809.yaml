@@ -1,0 +1,24 @@
+fieldLayouts:
+  c2831999-14d5-4ea8-86ae-68551d430c84:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 73a93e35-26a2-4275-9e3e-2ac7f3225c85 # Footer Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1918d50c-e173-4f95-b321-0f7480332317
+            userCondition: null
+            warning: null
+            width: 100
+        name: default
+        uid: ba6c5e00-f1a5-429a-bbf8-dd89759aec8a
+        userCondition: null
+handle: siteSettings
+name: 'Site Settings'
+sortOrder: 1

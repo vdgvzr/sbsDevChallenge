@@ -1,0 +1,48 @@
+field: beae2cc4-2ee5-443f-ab09-0198e719c85d # Homepage Header
+fieldLayouts:
+  1be65f50-155e-4e4e-a097-83b85939fef7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 924b4ab7-2643-49d3-a5eb-353d6a2d6a3a # Projects
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 613e32d2-8728-4aa0-b3e5-220c3fae39a8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f05007ab-b264-4b77-9499-126857afd3bb
+        userCondition: null
+fields:
+  924b4ab7-2643-49d3-a5eb-353d6a2d6a3a: # Projects
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: projects
+    instructions: null
+    name: Projects
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 648279709
+      contentTable: '{{%stc_projects}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: projectsPanel
+name: 'Projects Panel'
+sortOrder: 2

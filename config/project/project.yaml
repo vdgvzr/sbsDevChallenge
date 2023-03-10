@@ -1,13 +1,42 @@
-dateModified: 1678453197
+dateModified: 1678457436
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: 'SBS Cladding'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/assets/images'
+    type: craft\fs\Local
+    url: /assets/images
 meta:
   __names__:
     2f6f7a07-cfba-4216-afc8-3caffb35601f: 'SBS Cladding' # SBS Cladding
+    4f5fecc0-d008-4e0d-a3e6-d0b3f1598f4a: 'Project Image' # Project Image
+    5f1bf25a-17fd-4786-8d90-09e4008906a8: 'Background Image Opacity' # Background Image Opacity
+    6bcd2add-0c70-409d-9e1d-6e3dd160cb27: 'Intro Text' # Intro Text
+    7a92eda7-a886-44cb-acdb-51415fd3d1f2: Headers # Headers
+    8a506770-a48f-4247-a45f-7c487a68e5c8: 'Content Main' # Content Main
+    28fad58c-2e39-4a68-8b73-adbfe2ef2d46: 'Site Settings' # Site Settings
+    46a42a74-6aa9-484a-a949-12966bcc252b: 'Sub Header' # Sub Header
+    73a93e35-26a2-4275-9e3e-2ac7f3225c85: 'Footer Text' # Footer Text
+    461e1c14-9330-4f33-9296-66dafb613187: 'Header Text' # Header Text
+    924b4ab7-2643-49d3-a5eb-353d6a2d6a3a: Projects # Projects
+    2173ab92-34e2-409e-a0e8-72c0350a027e: 'Projects Panel' # Projects Panel
+    3577b8df-da8b-4dbd-be3c-0d010bed9a1c: 'Project Title' # Project Title
+    3760a55b-6fd8-4b26-9ee8-50b4c91095d2: Images # Images
     4450d7fc-db6c-447a-bd41-b211a5409cae: Common # Common
+    5858b1f7-c381-428d-a9de-6b836892afa7: 'Background Image' # Background Image
+    9076fbdb-672c-4632-837a-b8b2f3724293: Home # Home
+    37080c27-a82d-4938-8468-b735513f3809: 'Site Settings' # Site Settings
+    69788e25-7fd9-4999-b372-565f5a267443: 'Sub Header' # Sub Header
     99730f49-95cc-4e23-bb23-a070e5787866: 'SBS Cladding' # SBS Cladding
+    245448d7-3cf1-437a-b515-c08ec7c5dd5c: introTextPanel # introTextPanel
+    b92139d8-6cdf-488e-9aa8-3218ca6c2071: Home # Home
+    beae2cc4-2ee5-443f-ab09-0198e719c85d: 'Homepage Header' # Homepage Header
+    cc2279c7-803c-4813-baa7-77d91bac9b6f: 'Header Content' # Header Content
 plugins:
   element-api:
     edition: standard

@@ -1,0 +1,218 @@
+field: beae2cc4-2ee5-443f-ab09-0198e719c85d # Homepage Header
+fieldLayouts:
+  1dbd72b1-2308-43f0-ac81-c3c17fef5526:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 461e1c14-9330-4f33-9296-66dafb613187 # Header Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f6cb6f3b-c95f-4d73-9df8-5156ff39838d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5858b1f7-c381-428d-a9de-6b836892afa7 # Background Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18da5108-1898-4c83-b5dd-3a2bc2a57a21
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f1bf25a-17fd-4786-8d90-09e4008906a8 # Background Image Opacity
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f3267331-a52c-4584-8eca-c5790f698adb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 69788e25-7fd9-4999-b372-565f5a267443 # Sub Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d2bee88-78f7-4617-9033-af02638978b6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4304a1e3-6c53-404d-889d-b60ab6edd9c1
+        userCondition: null
+fields:
+  5f1bf25a-17fd-4786-8d90-09e4008906a8: # Background Image Opacity
+    columnSuffix: jdewisqi
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImageOpacity
+    instructions: null
+    name: 'Background Image Opacity'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Default
+            -
+              - value
+              - default
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 20%
+            -
+              - value
+              - '0.2'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 40%
+            -
+              - value
+              - '0.4'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 60%
+            -
+              - value
+              - '0.6'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 80%
+            -
+              - value
+              - '0.8'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  461e1c14-9330-4f33-9296-66dafb613187: # Header Text
+    columnSuffix: pgfjqyum
+    contentColumnType: text
+    fieldGroup: null
+    handle: headerText
+    instructions: null
+    name: 'Header Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5858b1f7-c381-428d-a9de-6b836892afa7: # Background Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: null
+    name: 'Background Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  69788e25-7fd9-4999-b372-565f5a267443: # Sub Header
+    columnSuffix: jysvwdip
+    contentColumnType: text
+    fieldGroup: null
+    handle: subHeader
+    instructions: null
+    name: 'Sub Header'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: headerContent
+name: 'Header Content'
+sortOrder: 1

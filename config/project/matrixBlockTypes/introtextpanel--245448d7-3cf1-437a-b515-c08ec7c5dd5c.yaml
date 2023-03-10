@@ -1,0 +1,78 @@
+field: 8a506770-a48f-4247-a45f-7c487a68e5c8 # Content Main
+fieldLayouts:
+  5a7534d0-a795-4de6-ae52-a768deab5fa3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6bcd2add-0c70-409d-9e1d-6e3dd160cb27 # Intro Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22166836-90c4-4460-bd75-ac9d31f9c44c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 46a42a74-6aa9-484a-a949-12966bcc252b # Sub Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa7bab10-f47c-4aad-be16-6e7962de45e4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7385e878-c546-4737-86fb-b3a4616f929c
+        userCondition: null
+fields:
+  6bcd2add-0c70-409d-9e1d-6e3dd160cb27: # Intro Text
+    columnSuffix: rnhmhfhr
+    contentColumnType: text
+    fieldGroup: null
+    handle: introText
+    instructions: null
+    name: 'Intro Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  46a42a74-6aa9-484a-a949-12966bcc252b: # Sub Header
+    columnSuffix: krhouwqk
+    contentColumnType: text
+    fieldGroup: null
+    handle: subHeader
+    instructions: null
+    name: 'Sub Header'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: introtextpanel
+name: introTextPanel
+sortOrder: 1

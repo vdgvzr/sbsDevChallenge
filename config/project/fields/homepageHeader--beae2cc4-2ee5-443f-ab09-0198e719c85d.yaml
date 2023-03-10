@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 7a92eda7-a886-44cb-acdb-51415fd3d1f2 # Headers
+handle: homepageHeader
+instructions: null
+name: 'Homepage Header'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_homepageheader}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

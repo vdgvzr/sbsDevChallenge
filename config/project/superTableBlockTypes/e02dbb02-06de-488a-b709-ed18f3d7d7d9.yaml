@@ -1,0 +1,104 @@
+changedFieldIndicator: 1710467626
+field: 924b4ab7-2643-49d3-a5eb-353d6a2d6a3a # Projects
+fieldLayouts:
+  31263b12-3ba4-4d44-9703-b0c03d7e1848:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3577b8df-da8b-4dbd-be3c-0d010bed9a1c # Project Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f61953d-9a54-479c-9300-d5910fe88b8a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4f5fecc0-d008-4e0d-a3e6-d0b3f1598f4a # Project Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aee5f5e4-e7c9-4318-9fff-bddf76b05a0d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d97e7c6f-d5d0-4524-bc91-298ac26bad94
+        userCondition: null
+fields:
+  4f5fecc0-d008-4e0d-a3e6-d0b3f1598f4a: # Project Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: projectImage
+    instructions: null
+    name: 'Project Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  3577b8df-da8b-4dbd-be3c-0d010bed9a1c: # Project Title
+    columnSuffix: onahrjph
+    contentColumnType: text
+    fieldGroup: null
+    handle: projectTitle
+    instructions: null
+    name: 'Project Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
