@@ -1,0 +1,22 @@
+// Homepage Header
+
+.homepage-header {
+    background-color: $sbs-tonal-blue;
+    color: $sbs-primary-white;
+    height: 100vh;
+
+    &__heading {
+
+    }
+
+    &__sub-heading {
+        margin-bottom: 25%;
+    }
+
+    .projects-panel {
+        background-color: $sbs-primary-dark-blue;
+        height: 200px;
+        /* border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow); */
+    }
+}

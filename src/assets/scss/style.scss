@@ -1,3 +1,6 @@
+// Mixins
+@import './mixins/fontMixins.scss';
+
 // Fonts
 
 // Abstract
@@ -11,11 +14,12 @@
 @import './base/base.scss';
 
 // Components
+@import './components/headers/homepageHeader.scss';
+@import './components/contentMain/introTextPanel.scss';
 
 // Layout
 @import './layout/layout.scss';
 
-// Mixins
 
 // Pages
 @import './pages/home.scss';

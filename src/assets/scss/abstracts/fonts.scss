@@ -1,0 +1,29 @@
+// Fonts
+
+// Figtree
+@font-face {
+    font-family: 'figtree-bold';
+    src:
+    url('../fonts/Figtree-Bold.woff2') format('woff2'),
+    url('../fonts/Figtree-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'figtree-medium';
+    src:
+    url('../fonts/Figtree-Medium.woff2') format('woff2'),
+    url('../fonts/Figtree-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'figtree';
+    src:
+    url('../fonts/Figtree-Regular.woff2') format('woff2'),
+    url('../fonts/Figtree-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}

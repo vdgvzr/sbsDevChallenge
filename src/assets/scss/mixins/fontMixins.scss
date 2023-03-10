@@ -1,0 +1,15 @@
+// Font Mixins
+@mixin figtree-bold {
+    font-family: 'figtree', 'sans-serif' !important;
+    font-weight: 700 !important;
+}
+
+@mixin figtree-medium {
+    font-family: 'figtree', 'sans-serif' !important;
+    font-weight: 500 !important;
+}
+
+@mixin figtree {
+    font-family: 'figtree', 'sans-serif' !important;
+    font-weight: 400 !important;
+}
