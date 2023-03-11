@@ -4,7 +4,7 @@
     padding: 50px 0;
     background-color: $sbs-tonal-lighter-blue;
 
-    .container-fluid {
+    .container-fluid:nth-child(1) {
         border-top: 1px solid $sbs-primary-dark-blue;
         border-bottom: 1px solid $sbs-primary-dark-blue;
     }
@@ -12,5 +12,23 @@
     &__button-container {
         height: 150px;
         border-left: 1px solid $sbs-primary-dark-blue;
+    }
+
+    .h-scrollable {
+        overflow-x: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+        
+    .h-scrollable [class*="col"] {
+        display: inline-block;
+        float: none;
+        white-space: normal;
+        vertical-align: top;
     }
 }
