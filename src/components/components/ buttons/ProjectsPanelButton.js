@@ -1,7 +1,7 @@
 import React from "react"
 import Icon from "../ui/Icon"
 
-const panelButton = ({ icon, onClick }) => {
+const ProjectsPanelButton = ({ icon, onClick }) => {
     return(
         <>
             <button className="projects-panel-button" onClick={onClick}>
@@ -11,4 +11,4 @@ const panelButton = ({ icon, onClick }) => {
     )
 }
 
-export default panelButton
+export default ProjectsPanelButton
