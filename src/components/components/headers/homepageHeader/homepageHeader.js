@@ -1,12 +1,19 @@
 import React from "react"
+import VerticalCta from "../../ buttons/ContactCta"
 
 const HomepageHeader = ({ homepageHeader }) => {
     const headerContent = homepageHeader[0].headerContent
     const projectsPanel = homepageHeader[1].projectsPanel
+    const contactCta = homepageHeader[2].contactCta
 
     return(
         <>
             <div className="homepage-header">
+                <VerticalCta
+                    type="button"
+                    buttonText={contactCta.cta}
+                    url={contactCta.url}
+                />
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
                         <div className="col-12 p-0">

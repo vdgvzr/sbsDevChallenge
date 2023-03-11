@@ -1,4 +1,4 @@
-changedFieldIndicator: 1710467626
+changedFieldIndicator: 1962992248
 field: 924b4ab7-2643-49d3-a5eb-353d6a2d6a3a # Projects
 fieldLayouts:
   31263b12-3ba4-4d44-9703-b0c03d7e1848:
@@ -72,7 +72,7 @@ fields:
             - class
             - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       sources: '*'

@@ -31,8 +31,24 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 648279709
-      contentTable: '{{%stc_projects}}'
+      changedFieldIndicator: 357321157
+      columns:
+        __assoc__:
+          -
+            - 3577b8df-da8b-4dbd-be3c-0d010bed9a1c # Project Title
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 4f5fecc0-d008-4e0d-a3e6-d0b3f1598f4a # Project Image
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_3_projects}}'
       fieldLayout: table
       maxRows: null
       minRows: null

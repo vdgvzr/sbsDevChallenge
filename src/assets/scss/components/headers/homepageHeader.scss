@@ -5,8 +5,10 @@
     color: $sbs-primary-white;
     height: 100vh;
 
-    &__heading {
-
+    .vertical-cta {
+        position: absolute;
+        top: calc(-1 * (var(--vertical-cta-padding-x) * 2));
+        right: calc(-1 * (var(--vertical-cta-padding-y) * 3));
     }
 
     &__sub-heading {

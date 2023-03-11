@@ -1,0 +1,73 @@
+field: beae2cc4-2ee5-443f-ab09-0198e719c85d # Homepage Header
+fieldLayouts:
+  5fba366a-6429-48d3-a9b6-1fa461820c69:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 50c24150-1333-44a7-a488-7046a5415d41 # CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d2e790c-2c75-4fa2-9a88-bdea346db6a4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7eeae8ff-adab-4b94-98a9-cd6fedb6cc4c # CTAURL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5cdd702-2111-4a88-aaa1-5c7a239cba01
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5e689328-93a3-410c-a593-95c8ada8f10a
+        userCondition: null
+fields:
+  7eeae8ff-adab-4b94-98a9-cd6fedb6cc4c: # CTAURL
+    columnSuffix: qcfghulm
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: ctaUrl
+    instructions: null
+    name: CTAURL
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  50c24150-1333-44a7-a488-7046a5415d41: # CTA
+    columnSuffix: ygeefhtw
+    contentColumnType: text
+    fieldGroup: null
+    handle: cta
+    instructions: null
+    name: CTA
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contactCta
+name: 'Contact CTA'
+sortOrder: 3

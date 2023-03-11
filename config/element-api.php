@@ -37,6 +37,14 @@ function transformHomepageHeader(Entry $entry){
                     ]
                 ];
                 break;
+            case 'contactCta':
+                $matrixBlocks[] = [
+                    'contactCta' => [
+                        'cta' => $block->cta,
+                        'ctaUrl' => $block->ctaUrl
+                    ]
+                ];
+                break;
         }
     }
     return $matrixBlocks;
