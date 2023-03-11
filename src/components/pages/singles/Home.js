@@ -1,5 +1,5 @@
 import React from "react"
-import HomepageHeader from "../../components/headers/homepageHeader/homepageHeader"
+import HomepageHeader from "../../components/headers/homepageHeader"
 import IntroTextPanel from "../../components/contentMain/IntroTextPanel"
 
 const Home = ({ page }) => {

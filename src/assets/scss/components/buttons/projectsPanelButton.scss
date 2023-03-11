@@ -1,0 +1,20 @@
+// Projects Panel Button
+
+.projects-panel-button {
+    height: var(--projects-button-size);
+    width: var(--projects-button-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid $sbs-primary-white;
+
+    &:hover {
+        background-color: $sbs-tonal-blue;
+    }
+
+    &:first-of-type {
+        border-bottom: 1px solid $sbs-primary-white;
+    }
+}

@@ -3,7 +3,9 @@
 .homepage-header {
     background-color: $sbs-tonal-blue;
     color: $sbs-primary-white;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    padding: 50px;
 
     .vertical-cta {
         position: absolute;
@@ -17,8 +19,18 @@
 
     .projects-panel {
         background-color: $sbs-primary-dark-blue;
-        height: 200px;
-        /* border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow); */
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+
+        h3 {
+            width: 20%;
+        }
+
+        &__image {
+            width: 100%;
+            border: 10px solid $sbs-primary-dark-blue;
+            border-radius: var(--border-radius);
+        }
+        
     }
 }
