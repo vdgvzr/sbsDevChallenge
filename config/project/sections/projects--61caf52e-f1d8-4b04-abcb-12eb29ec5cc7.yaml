@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: projects
+name: Projects
+propagationMethod: all
+siteSettings:
+  2f6f7a07-cfba-4216-afc8-3caffb35601f: # SBS Cladding
+    enabledByDefault: true
+    hasUrls: true
+    template: projects/_entry
+    uriFormat: 'projects/{slug}'
+type: channel

@@ -25,10 +25,11 @@ function transformHomepageHeader(Entry $entry){
             case 'projectsPanel':
                 $projects = [];
                 foreach ($block->projects as $row){
-                    $projectImage = $row->projectImage->one();
+                    $projectImage = $row->image->one();
                     $projects[] = [
-                        'projectTitle' => $row->projectTitle,
+                        'projectTitle' => $row->title,
                         'projectImage' => $projectImage ? $projectImage->getUrl() : null,
+                        'url' => $row->url
                     ];
                 }
                 $matrixBlocks[] = [

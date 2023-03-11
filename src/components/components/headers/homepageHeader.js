@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react"
 import VerticalCta from "../ buttons/ContactCta"
-import ProjectsPanelButton from "../ buttons/ProjectsPanelButton"
+import panelButton from "../ buttons/panelButton"
 import Link from "../ui/Link"
 
 const HomepageHeader = ({ homepageHeader }) => {
@@ -48,11 +48,11 @@ const HomepageHeader = ({ homepageHeader }) => {
                                 <div className="col-12">
                                     <div className="projects-panel d-flex h-100">
                                         <div className="d-flex flex-column">
-                                            <ProjectsPanelButton
+                                            <panelButton
                                                 icon="chevron-right"
                                                 onClick={handleNextProject}
                                             />
-                                            <ProjectsPanelButton
+                                            <panelButton
                                                 icon="chevron-left"
                                                 onClick={handlePrevProject}
                                             />
@@ -76,7 +76,7 @@ const HomepageHeader = ({ homepageHeader }) => {
                                                 <div className="col-6 d-flex align-items-end">
                                                     <Link
                                                         linkText="Explore Project"
-                                                        url="/"
+                                                        url={projects[project].url}
                                                         theme="light"
                                                         icon="chevron-right"
                                                         justify="end"

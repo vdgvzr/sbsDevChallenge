@@ -30,35 +30,33 @@ fields:
     name: Projects
     searchable: false
     settings:
-      blockTypeFields: 0
-      changedFieldIndicator: 357321157
-      columns:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
         __assoc__:
           -
-            - 3577b8df-da8b-4dbd-be3c-0d010bed9a1c # Project Title
-            -
-              __assoc__:
-                -
-                  - width
-                  - ''
+            - elementType
+            - craft\elements\Entry
           -
-            - 4f5fecc0-d008-4e0d-a3e6-d0b3f1598f4a # Project Image
-            -
-              __assoc__:
-                -
-                  - width
-                  - ''
-      contentTable: '{{%stc_3_projects}}'
-      fieldLayout: table
-      maxRows: null
-      minRows: null
-      propagationKeyFormat: null
-      propagationMethod: all
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
-      staticField: null
+      showSiteMenu: true
+      sources:
+        - 'section:61caf52e-f1d8-4b04-abcb-12eb29ec5cc7' # Projects
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
     translationKeyFormat: null
-    translationMethod: none
-    type: verbb\supertable\fields\SuperTableField
+    translationMethod: site
+    type: craft\fields\Entries
 handle: projectsPanel
 name: 'Projects Panel'
 sortOrder: 2

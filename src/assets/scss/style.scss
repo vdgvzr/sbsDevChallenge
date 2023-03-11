@@ -4,11 +4,11 @@
 // Fonts
 
 // Abstract
+@import './abstracts/variables.scss';
 @import './abstracts/colors.scss';
 @import './abstracts/fonts.scss';
 @import './abstracts/media-queries.scss';
 @import './abstracts/typography.scss';
-@import './abstracts/variables.scss';
 
 // Base
 @import './base/base.scss';
@@ -17,7 +17,7 @@
 @import './components/headers/homepageHeader.scss';
 @import './components/contentMain/introTextPanel.scss';
 @import './components/buttons/verticalCta.scss';
-@import './components/buttons/projectsPanelButton.scss';
+@import './components/buttons/panelButton.scss';
 @import './components/ui/link.scss';
 
 // Layout

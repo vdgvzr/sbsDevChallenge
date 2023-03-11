@@ -1,4 +1,4 @@
-dateModified: 1678473086
+dateModified: 1678547336
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: 'SBS Cladding'
@@ -24,7 +24,9 @@ meta:
     28fad58c-2e39-4a68-8b73-adbfe2ef2d46: 'Site Settings' # Site Settings
     46a42a74-6aa9-484a-a949-12966bcc252b: 'Sub Header' # Sub Header
     50c24150-1333-44a7-a488-7046a5415d41: CTA # CTA
+    61caf52e-f1d8-4b04-abcb-12eb29ec5cc7: Projects # Projects
     73a93e35-26a2-4275-9e3e-2ac7f3225c85: 'Footer Text' # Footer Text
+    86ed1b56-4beb-44d8-832e-46c870ce383d: Default # Default
     461e1c14-9330-4f33-9296-66dafb613187: 'Header Text' # Header Text
     924b4ab7-2643-49d3-a5eb-353d6a2d6a3a: Projects # Projects
     2173ab92-34e2-409e-a0e8-72c0350a027e: 'Projects Panel' # Projects Panel
@@ -38,6 +40,7 @@ meta:
     99730f49-95cc-4e23-bb23-a070e5787866: 'SBS Cladding' # SBS Cladding
     245448d7-3cf1-437a-b515-c08ec7c5dd5c: introTextPanel # introTextPanel
     b92139d8-6cdf-488e-9aa8-3218ca6c2071: Home # Home
+    babcbcb7-fd8b-4057-8be4-a4ab3b27ca86: Image # Image
     beae2cc4-2ee5-443f-ab09-0198e719c85d: 'Homepage Header' # Homepage Header
     cc2279c7-803c-4813-baa7-77d91bac9b6f: 'Header Content' # Header Content
 plugins:
