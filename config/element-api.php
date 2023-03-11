@@ -64,6 +64,23 @@ function transformContentMain(Entry $entry){
                     ]
                 ];
                 break;
+            case 'productscarousel':
+                $products = [];
+                foreach ($block->products as $row){
+                    $productImage = $row->image->one();
+                    $products[] = [
+                        'productTitle' => $row->title,
+                        'productImage' => $productImage ? $productImage->getUrl() : null,
+                        'url' => $row->url
+                    ];
+                }
+                $matrixBlocks[] = [
+                    'productscarousel' => [
+                        'heading' => $block->heading,
+                        'products' => $products
+                    ]
+                ];
+                break;
         }
     }
     return $matrixBlocks;

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: products
+name: Products
+propagationMethod: all
+siteSettings:
+  2f6f7a07-cfba-4216-afc8-3caffb35601f: # SBS Cladding
+    enabledByDefault: true
+    hasUrls: true
+    template: products/_entry
+    uriFormat: 'products/{slug}'
+type: channel

@@ -1,6 +1,7 @@
 import React from "react"
 import HomepageHeader from "../../components/headers/HomepageHeader"
 import IntroTextPanel from "../../components/contentMain/IntroTextPanel"
+import ProductsCarousel from "../../components/contentMain/ProductsCarousel"
 
 const Home = ({ page }) => {
     return(
@@ -11,7 +12,9 @@ const Home = ({ page }) => {
             <IntroTextPanel 
                 contentMain={page.contentMain}
             />
-
+            <ProductsCarousel
+                contentMain={page.contentMain}
+            />
         </>
     )
 }

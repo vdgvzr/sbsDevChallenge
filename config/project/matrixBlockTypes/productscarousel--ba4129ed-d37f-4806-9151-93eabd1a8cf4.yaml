@@ -1,0 +1,94 @@
+field: 8a506770-a48f-4247-a45f-7c487a68e5c8 # Content Main
+fieldLayouts:
+  5d82a821-8eba-4982-94d3-f161e07a06fa:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 854bb6b0-99a8-4691-ab08-04888dd939ee # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9dcf6f78-0442-4e8c-b371-74454fe19847
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 783b8405-7be7-427f-a2aa-408f21122055 # Products
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52358001-1827-4289-b4c1-fdc7672be6b6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cc9bb72e-f1ed-429d-ad25-bece732b6e46
+        userCondition: null
+fields:
+  783b8405-7be7-427f-a2aa-408f21122055: # Products
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: products
+    instructions: null
+    name: Products
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      sources:
+        - 'section:a1e1b42d-228a-474f-b9b8-c98a243529dc' # Products
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  854bb6b0-99a8-4691-ab08-04888dd939ee: # Heading
+    columnSuffix: lcijuwqr
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: productscarousel
+name: productsCarousel
+sortOrder: 2

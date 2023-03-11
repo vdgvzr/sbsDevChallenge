@@ -1,0 +1,16 @@
+// Products Carousel
+
+.products-carousel {
+    padding: 50px 0;
+    background-color: $sbs-tonal-lighter-blue;
+
+    .container-fluid {
+        border-top: 1px solid $sbs-primary-dark-blue;
+        border-bottom: 1px solid $sbs-primary-dark-blue;
+    }
+
+    &__button-container {
+        height: 150px;
+        border-left: 1px solid $sbs-primary-dark-blue;
+    }
+}

@@ -1,4 +1,4 @@
-dateModified: 1678547336
+dateModified: 1678549333
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: 'SBS Cladding'
@@ -28,6 +28,8 @@ meta:
     73a93e35-26a2-4275-9e3e-2ac7f3225c85: 'Footer Text' # Footer Text
     86ed1b56-4beb-44d8-832e-46c870ce383d: Default # Default
     461e1c14-9330-4f33-9296-66dafb613187: 'Header Text' # Header Text
+    783b8405-7be7-427f-a2aa-408f21122055: Products # Products
+    854bb6b0-99a8-4691-ab08-04888dd939ee: Heading # Heading
     924b4ab7-2643-49d3-a5eb-353d6a2d6a3a: Projects # Projects
     2173ab92-34e2-409e-a0e8-72c0350a027e: 'Projects Panel' # Projects Panel
     3577b8df-da8b-4dbd-be3c-0d010bed9a1c: 'Project Title' # Project Title
@@ -39,7 +41,10 @@ meta:
     69788e25-7fd9-4999-b372-565f5a267443: 'Sub Header' # Sub Header
     99730f49-95cc-4e23-bb23-a070e5787866: 'SBS Cladding' # SBS Cladding
     245448d7-3cf1-437a-b515-c08ec7c5dd5c: introTextPanel # introTextPanel
+    a1e1b42d-228a-474f-b9b8-c98a243529dc: Products # Products
+    b7f79b1b-db2c-4582-bd04-a57479f74f24: Default # Default
     b92139d8-6cdf-488e-9aa8-3218ca6c2071: Home # Home
+    ba4129ed-d37f-4806-9151-93eabd1a8cf4: productsCarousel # productsCarousel
     babcbcb7-fd8b-4057-8be4-a4ab3b27ca86: Image # Image
     beae2cc4-2ee5-443f-ab09-0198e719c85d: 'Homepage Header' # Homepage Header
     cc2279c7-803c-4813-baa7-77d91bac9b6f: 'Header Content' # Header Content

@@ -1,4 +1,5 @@
 import React from "react"
+import Heading from '../ui/Heading'
 
 const IntroTextPanel = ({ contentMain }) => {
     const introTextPanel = contentMain[0].introtextpanel
@@ -10,7 +11,7 @@ const IntroTextPanel = ({ contentMain }) => {
                 <div className="container h-100">
                     <div className="row align-items-center justify-content-end h-100">
                         <div className="col-6">
-                            <h1 className="h1-small">{introTextPanel.introText}</h1>
+                            <Heading heading={introTextPanel.introText} />
                             <p>{introTextPanel.subHeader}</p>
                         </div>
                     </div>
