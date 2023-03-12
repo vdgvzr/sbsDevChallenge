@@ -119,6 +119,31 @@ function transformContentMain(Entry $entry){
                     ]
                 ];
                 break;
+            case 'textWithImagePanel':
+                $linkCta = [];
+                $textArr = [];
+                foreach ($block->linkCta as $row){
+                    $linkCta[] = [
+                        'linkText' => $row->linkText,
+                        'linkUrl' => $row->linkUrl,
+                        'external' => $row->external,
+                    ];
+                }
+                foreach ($block->text as $row){
+                    $textArr[] = [
+                        'redactor' => $row->redactor->getRawContent(),
+                    ];
+                }
+                $image = $block->image->one();
+                $matrixBlocks[] = [
+                    'textWithImagePanel' => [
+                        'heading' => $block->heading,
+                        'linkCta' => $linkCta,
+                        'text' => $textArr,
+                        'image' => $image ? $image->getUrl() : null,
+                    ]
+                ];
+                break;
         }
     }
     return $matrixBlocks;

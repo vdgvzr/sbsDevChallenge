@@ -4,6 +4,7 @@ import IntroTextPanel from "../../components/contentMain/IntroTextPanel"
 import ProductsCarousel from "../../components/contentMain/ProductsCarousel"
 import TestimonialCarousel from "../../components/contentMain/TestimonialsCarousel"
 import CtaPanel from "../../components/contentMain/CtaPanel"
+import TextWithImagePanel from "../../components/contentMain/TextWithImagePanel"
 
 const Home = ({ page }) => {
     return(
@@ -21,6 +22,9 @@ const Home = ({ page }) => {
                 contentMain={page.contentMain}
             />
             <CtaPanel
+                contentMain={page.contentMain}
+            />
+            <TextWithImagePanel
                 contentMain={page.contentMain}
             />
         </>

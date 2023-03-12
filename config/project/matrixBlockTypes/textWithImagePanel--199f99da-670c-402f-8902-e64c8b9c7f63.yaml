@@ -1,0 +1,198 @@
+field: 8a506770-a48f-4247-a45f-7c487a68e5c8 # Content Main
+fieldLayouts:
+  d7ae04a2-09e9-456e-803e-ed35331a331c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3d7e74bf-3f90-4d23-bdd8-cf3518dffc71 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 771d606d-2318-44f5-b7ec-41917b66c929
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 438d2416-bc8f-4562-b519-1205ace9cf45 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 938b18c8-811f-4352-b57d-525ce4c84eb1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8a40c4ab-f2c9-4218-83bb-14ad32f63f2d # LinkCta
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8679d9e2-d016-471a-8f9c-dc6ad07bc5a0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e74dbe8e-7879-41d8-b1bd-a0f22fbc8cdd # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d992ae20-1b6c-41ec-a5ae-05f86fd42618
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4c566686-7a3c-4430-9eed-ec37a17933c4
+        userCondition: null
+fields:
+  3d7e74bf-3f90-4d23-bdd8-cf3518dffc71: # Heading
+    columnSuffix: rjydiqto
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8a40c4ab-f2c9-4218-83bb-14ad32f63f2d: # LinkCta
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkCta
+    instructions: null
+    name: LinkCta
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1173294196
+      columns:
+        __assoc__:
+          -
+            - db6039ae-01bb-4a72-8948-e4237047a910 # Link Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - b4b049e5-bfe5-4504-a5cf-2fbd16b0dd47 # LinkUrl
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - d71035cf-726c-4aa8-b2a7-6589c0a5f0b0 # External
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_8_linkcta}}'
+      fieldLayout: table
+      maxRows: 1
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  438d2416-bc8f-4562-b519-1205ace9cf45: # Text
+    columnSuffix: prakmbgy
+    contentColumnType: string
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1915798314
+      contentTable: '{{%stc_8_text}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  e74dbe8e-7879-41d8-b1bd-a0f22fbc8cdd: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: textWithImagePanel
+name: 'Text With Image Panel'
+sortOrder: 5

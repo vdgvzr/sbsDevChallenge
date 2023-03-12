@@ -9,7 +9,7 @@ const Button = ({ type, buttonText, url, external }) => {
                 role={type}
                 href={url}
                 aria-label={buttonText}
-                target={external ?? "_blank"}
+                target={external ? "_blank" : ""}
             >
                 <span>{buttonText}</span>
             </a>
