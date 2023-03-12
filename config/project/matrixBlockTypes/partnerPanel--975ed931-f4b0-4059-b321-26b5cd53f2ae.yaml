@@ -1,0 +1,107 @@
+field: 8a506770-a48f-4247-a45f-7c487a68e5c8 # Content Main
+fieldLayouts:
+  3f5fe2d2-f8ab-4c0c-baf0-66e0bed76b0e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 18084461-03a2-477a-9414-153c5854e33c # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2eca0e3-2079-426c-aebc-abe2b3db8b8b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d279d8a2-c55e-4f59-ab8c-7787e5901846 # Partner Logos
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 579c77b3-3a8e-4ab4-8c0d-30b1fc99f1eb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: de239126-ab12-4bc6-828b-de4982e3dd1a
+        userCondition: null
+fields:
+  18084461-03a2-477a-9414-153c5854e33c: # Heading
+    columnSuffix: hgbpjpys
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d279d8a2-c55e-4f59-ab8c-7787e5901846: # Partner Logos
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: partnerLogos
+    instructions: null
+    name: 'Partner Logos'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 5
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:20fef043-e524-4439-8d77-05ba8991665c' # Logos
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: partnerPanel
+name: 'Partner Panel'
+sortOrder: 6

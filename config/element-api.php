@@ -144,6 +144,20 @@ function transformContentMain(Entry $entry){
                     ]
                 ];
                 break;
+            case 'partnerPanel':
+                $logos = [];
+                foreach ($block->partnerLogos->all() as $row){
+                    $logos[] = [
+                        'logo' => $row->getUrl(),
+                    ];
+                }
+                $matrixBlocks[] = [
+                    'partnerPanel' => [
+                        'heading' => $block->heading,
+                        'logos' => $logos
+                    ]
+                ];
+                break;
         }
     }
     return $matrixBlocks;

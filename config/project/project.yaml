@@ -1,4 +1,4 @@
-dateModified: 1678626436
+dateModified: 1678635350
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: 'SBS Cladding'
@@ -52,6 +52,7 @@ meta:
     783b8405-7be7-427f-a2aa-408f21122055: Products # Products
     854bb6b0-99a8-4691-ab08-04888dd939ee: Heading # Heading
     924b4ab7-2643-49d3-a5eb-353d6a2d6a3a: Projects # Projects
+    975ed931-f4b0-4059-b321-26b5cd53f2ae: 'Partner Panel' # Partner Panel
     1450cb22-ba36-4da2-8ab4-c4d8b7c47709: 'Button Text' # Button Text
     2173ab92-34e2-409e-a0e8-72c0350a027e: 'Projects Panel' # Projects Panel
     3577b8df-da8b-4dbd-be3c-0d010bed9a1c: 'Project Title' # Project Title
@@ -66,6 +67,7 @@ meta:
     69788e25-7fd9-4999-b372-565f5a267443: 'Sub Header' # Sub Header
     99730f49-95cc-4e23-bb23-a070e5787866: 'SBS Cladding' # SBS Cladding
     245448d7-3cf1-437a-b515-c08ec7c5dd5c: introTextPanel # introTextPanel
+    18084461-03a2-477a-9414-153c5854e33c: Heading # Heading
     a1e1b42d-228a-474f-b9b8-c98a243529dc: Products # Products
     b4b049e5-bfe5-4504-a5cf-2fbd16b0dd47: LinkUrl # LinkUrl
     b7cae76a-588f-4f19-8628-22e3d6e18b63: 'Button Url' # Button Url
@@ -78,6 +80,7 @@ meta:
     c817bba6-aae6-4a1d-81e4-a3a72b244306: Buttons # Buttons
     cb44379a-1170-4577-8350-44e4611ecbc3: External # External
     cc2279c7-803c-4813-baa7-77d91bac9b6f: 'Header Content' # Header Content
+    d279d8a2-c55e-4f59-ab8c-7787e5901846: 'Partner Logos' # Partner Logos
     d71035cf-726c-4aa8-b2a7-6589c0a5f0b0: External # External
     db6039ae-01bb-4a72-8948-e4237047a910: 'Link Text' # Link Text
     e74dbe8e-7879-41d8-b1bd-a0f22fbc8cdd: Image # Image

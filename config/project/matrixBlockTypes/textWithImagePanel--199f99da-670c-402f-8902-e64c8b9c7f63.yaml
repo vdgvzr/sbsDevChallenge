@@ -87,7 +87,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1173294196
+      changedFieldIndicator: 1983506896
       columns:
         __assoc__:
           -
@@ -132,7 +132,16 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1915798314
+      changedFieldIndicator: 1411461833
+      columns:
+        __assoc__:
+          -
+            - ea7c6c9d-7256-4af0-bfea-ec134adcfd3e # Redactor
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
       contentTable: '{{%stc_8_text}}'
       fieldLayout: table
       maxRows: null
