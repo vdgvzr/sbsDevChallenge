@@ -1,0 +1,94 @@
+field: 8a506770-a48f-4247-a45f-7c487a68e5c8 # Content Main
+fieldLayouts:
+  32db8e45-aff6-4633-9236-b5d86c2e2205:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c9b7f8a6-6b93-4333-992a-ae2fc9cca57b # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90fa2e1e-78d6-465b-96e9-45abff40ba68
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 54415aa3-917f-4f6d-bc9c-eef562365b8b # CTA Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 93567b80-a31d-493e-8283-99bee7ca020c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0ee90a9e-938a-4269-84a5-ecb946c0626d
+        userCondition: null
+fields:
+  54415aa3-917f-4f6d-bc9c-eef562365b8b: # CTA Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: ctaButton
+    instructions: null
+    name: 'CTA Button'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      sources:
+        - 'section:c817bba6-aae6-4a1d-81e4-a3a72b244306' # Buttons
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  c9b7f8a6-6b93-4333-992a-ae2fc9cca57b: # Heading
+    columnSuffix: gglhlrzo
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: ctaPanel
+name: 'CTA Panel'
+sortOrder: 4

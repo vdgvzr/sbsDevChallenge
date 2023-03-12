@@ -1,0 +1,19 @@
+columnSuffix: czhwpipt
+contentColumnType: text
+fieldGroup: 4450d7fc-db6c-447a-bd41-b211a5409cae # Common
+handle: buttonText
+instructions: null
+name: 'Button Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

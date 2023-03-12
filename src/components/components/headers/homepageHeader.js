@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react"
-import VerticalCta from "../ buttons/ContactCta"
+import VerticalCta from "../ buttons/VerticalCta"
 import ProjectsPanelButton from "../ buttons/ProjectsPanelButton"
 import Link from "../ui/Link"
 

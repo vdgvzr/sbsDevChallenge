@@ -1,0 +1,37 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 4450d7fc-db6c-447a-bd41-b211a5409cae # Common
+handle: buttonUrl
+instructions: null
+name: 'Button Url'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 1843704014
+  columns:
+    __assoc__:
+      -
+        - bf6880bf-5fa2-44e4-8aaa-c4536e5760d6
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 77279e18-7cfe-448f-b57d-96d5a65b9911
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_buttonurl}}'
+  fieldLayout: matrix
+  maxRows: null
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: null
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

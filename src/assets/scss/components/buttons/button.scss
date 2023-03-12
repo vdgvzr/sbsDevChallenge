@@ -1,0 +1,15 @@
+// Default Button
+
+.button-default {
+    @include figtree-bold;
+    text-decoration: none;
+    color: $sbs-tonal-dark-blue;
+    padding: 10px 60px;
+    background-color: $sbs-primary-orange;
+    border-radius: var(--button-style-border-radius);
+
+    &:hover {
+        color: $sbs-tonal-dark-blue;
+        background-color: $sbs-tonal-orange;
+    }
+}

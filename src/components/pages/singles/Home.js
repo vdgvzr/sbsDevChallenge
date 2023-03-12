@@ -3,6 +3,7 @@ import HomepageHeader from "../../components/headers/HomepageHeader"
 import IntroTextPanel from "../../components/contentMain/IntroTextPanel"
 import ProductsCarousel from "../../components/contentMain/ProductsCarousel"
 import TestimonialCarousel from "../../components/contentMain/TestimonialsCarousel"
+import CtaPanel from "../../components/contentMain/CtaPanel"
 
 const Home = ({ page }) => {
     return(
@@ -17,6 +18,9 @@ const Home = ({ page }) => {
                 contentMain={page.contentMain}
             />
             <TestimonialCarousel
+                contentMain={page.contentMain}
+            />
+            <CtaPanel
                 contentMain={page.contentMain}
             />
         </>

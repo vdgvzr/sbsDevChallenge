@@ -8,10 +8,15 @@
     &__rating {
         border: 1px solid $sbs-primary-orange;
         width: fit-content;
+        border-radius: var(--button-style-border-radius);
 
         &-star {
             display: inline-block;
-            padding: 5px;
+            height: 50px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }

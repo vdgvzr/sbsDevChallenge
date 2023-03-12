@@ -1,0 +1,66 @@
+changedFieldIndicator: 1513494994
+field: b7cae76a-588f-4f19-8628-22e3d6e18b63 # Button Url
+fieldLayouts:
+  5482766e-180c-4142-811e-f1ea21cee185:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 84e925da-1fc3-4e78-a5fe-b0c5457ac340 # LinkUrl
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30165a1a-87df-446e-915b-1c8f762d24c7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cb44379a-1170-4577-8350-44e4611ecbc3 # External
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac3b838c-af6a-41bd-9929-665435dc9bc3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c4a98cad-b8f3-4a3c-8dbd-da968995f7ca
+        userCondition: null
+fields:
+  84e925da-1fc3-4e78-a5fe-b0c5457ac340: # LinkUrl
+    columnSuffix: vomghocs
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: linkUrl
+    instructions: null
+    name: LinkUrl
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  cb44379a-1170-4577-8350-44e4611ecbc3: # External
+    columnSuffix: jgrtesbb
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: external
+    instructions: null
+    name: External
+    searchable: false
+    settings:
+      default: false
+      offLabel: Internal
+      onLabel: External
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch

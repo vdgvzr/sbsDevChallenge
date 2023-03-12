@@ -6,7 +6,7 @@ const TestimonialCard = ({ testimonial }) => {
         <>
             <div className="testimonial-card card">
                 <div className="card-body pb-3">
-                    <div className="testimonial-card__rating d-block mb-4">
+                    <div className="testimonial-card__rating d-flex mb-4">
                         {[...Array(testimonial.rating)].map((elem, i) => {
                             return <div className="testimonial-card__rating-star" key={i}><Icon name="star" color="#EC6608" height="20" width="20" /></div>
                         })}

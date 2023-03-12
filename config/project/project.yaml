@@ -1,4 +1,4 @@
-dateModified: 1678618635
+dateModified: 1678621073
 email:
   fromEmail: shaunlindsley@gmail.com
   fromName: 'SBS Cladding'
@@ -20,6 +20,7 @@ fs:
     url: /assets/logos
 meta:
   __names__:
+    2f2d1e4f-5298-4d32-858f-275cdc561fe7: Default # Default
     2f6f7a07-cfba-4216-afc8-3caffb35601f: 'SBS Cladding' # SBS Cladding
     2f10c009-67eb-4369-a9a7-e96fd8028336: Logo # Logo
     4f5fecc0-d008-4e0d-a3e6-d0b3f1598f4a: 'Project Image' # Project Image
@@ -31,6 +32,7 @@ meta:
     7eeae8ff-adab-4b94-98a9-cd6fedb6cc4c: CTAURL # CTAURL
     8a47e409-48ca-4a99-88a4-47a44c6732b9: 'Contact CTA' # Contact CTA
     8a506770-a48f-4247-a45f-7c487a68e5c8: 'Content Main' # Content Main
+    08e6b6e6-e40f-443d-a74e-5060d8adc32e: 'CTA Panel' # CTA Panel
     20fef043-e524-4439-8d77-05ba8991665c: Logos # Logos
     28fad58c-2e39-4a68-8b73-adbfe2ef2d46: 'Site Settings' # Site Settings
     40d026ad-356b-4c89-89a4-1018f59e3cdb: Testimonials # Testimonials
@@ -40,11 +42,13 @@ meta:
     52eeb8a3-b925-4f72-b31e-db3ed603e348: Client # Client
     61caf52e-f1d8-4b04-abcb-12eb29ec5cc7: Projects # Projects
     73a93e35-26a2-4275-9e3e-2ac7f3225c85: 'Footer Text' # Footer Text
+    84e925da-1fc3-4e78-a5fe-b0c5457ac340: LinkUrl # LinkUrl
     86ed1b56-4beb-44d8-832e-46c870ce383d: Default # Default
     461e1c14-9330-4f33-9296-66dafb613187: 'Header Text' # Header Text
     783b8405-7be7-427f-a2aa-408f21122055: Products # Products
     854bb6b0-99a8-4691-ab08-04888dd939ee: Heading # Heading
     924b4ab7-2643-49d3-a5eb-353d6a2d6a3a: Projects # Projects
+    1450cb22-ba36-4da2-8ab4-c4d8b7c47709: 'Button Text' # Button Text
     2173ab92-34e2-409e-a0e8-72c0350a027e: 'Projects Panel' # Projects Panel
     3577b8df-da8b-4dbd-be3c-0d010bed9a1c: 'Project Title' # Project Title
     3760a55b-6fd8-4b26-9ee8-50b4c91095d2: Images # Images
@@ -54,15 +58,20 @@ meta:
     19181c1b-be03-4fa3-84af-af5afdafd089: Heading # Heading
     37080c27-a82d-4938-8468-b735513f3809: 'Site Settings' # Site Settings
     39510dbc-8530-4a3e-b4e5-d95fc179226f: testimonialsCarousel # testimonialsCarousel
+    54415aa3-917f-4f6d-bc9c-eef562365b8b: 'CTA Button' # CTA Button
     69788e25-7fd9-4999-b372-565f5a267443: 'Sub Header' # Sub Header
     99730f49-95cc-4e23-bb23-a070e5787866: 'SBS Cladding' # SBS Cladding
     245448d7-3cf1-437a-b515-c08ec7c5dd5c: introTextPanel # introTextPanel
     a1e1b42d-228a-474f-b9b8-c98a243529dc: Products # Products
+    b7cae76a-588f-4f19-8628-22e3d6e18b63: 'Button Url' # Button Url
     b7f79b1b-db2c-4582-bd04-a57479f74f24: Default # Default
     b92139d8-6cdf-488e-9aa8-3218ca6c2071: Home # Home
     ba4129ed-d37f-4806-9151-93eabd1a8cf4: productsCarousel # productsCarousel
     babcbcb7-fd8b-4057-8be4-a4ab3b27ca86: Image # Image
     beae2cc4-2ee5-443f-ab09-0198e719c85d: 'Homepage Header' # Homepage Header
+    c9b7f8a6-6b93-4333-992a-ae2fc9cca57b: Heading # Heading
+    c817bba6-aae6-4a1d-81e4-a3a72b244306: Buttons # Buttons
+    cb44379a-1170-4577-8350-44e4611ecbc3: External # External
     cc2279c7-803c-4813-baa7-77d91bac9b6f: 'Header Content' # Header Content
     e6536a91-5902-484d-8e01-6196fabbb10a: Rating # Rating
 plugins:

@@ -101,6 +101,24 @@ function transformContentMain(Entry $entry){
                     ]
                 ];
                 break;
+            case 'ctaPanel':
+                $button = [];
+                foreach ($block->ctaButton as $row){
+                    $button[] = [
+                        'buttonText' => $row->buttonText,
+                        'buttonUrl' => [
+                            'linkUrl' => $row->buttonUrl->linkUrl,
+                            'external' => $row->buttonUrl->external,
+                        ]
+                    ];
+                }
+                $matrixBlocks[] = [
+                    'ctaPanel' => [
+                        'heading' => $block->heading,
+                        'button' => $button
+                    ]
+                ];
+                break;
         }
     }
     return $matrixBlocks;

@@ -1,0 +1,13 @@
+// CTA Panel
+
+.cta-panel {
+    padding: 100px 0;
+    background-color: $sbs-primary-dark-blue;
+    color: $sbs-primary-white;
+    transition: all 100ms ease-in-out;
+
+    &__inner {
+        padding: 75px 0;
+        background-color: $sbs-tonal-dark-blue;
+    }
+}
