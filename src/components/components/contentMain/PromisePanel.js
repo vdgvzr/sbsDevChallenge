@@ -2,6 +2,7 @@ import React from "react"
 import Heading from "../ui/Heading"
 import Button from "../ buttons/Button"
 import Link from "../ui/Link"
+import Image from "../ui/Image"
 
 const PromisePanel = ({ contentMain }) => {
     const promisePanel = contentMain[6].promisePanel
@@ -25,7 +26,7 @@ const PromisePanel = ({ contentMain }) => {
                         />
                     </div>
                     <div className="container">
-                        <div className="row justify-content-end">
+                        <div className="row justify-content-end mb-4">
                             <div className="col-6">
                                 <div className="mb-5">
                                     <Heading heading={promisePanel.heading} />
@@ -33,13 +34,11 @@ const PromisePanel = ({ contentMain }) => {
                                 <p className="body-copy">{promisePanel.text}</p>
                             </div>
                         </div>
-                        <div className="row mb-5">
+                        <div className="row mb-5 mt-5">
                             {[...Array(promisePanel.promises.length)].map((elem, i) => {
                                 return(
                                     <div key={i} className="col-4 px-5 text-center">
-                                        <div className="promise-panel__image-container my-5">
-                                            <img className="promise-panel__image-container-image" src={promisePanel.promises[i].promiseLogo} alt={promisePanel.promises[i].promiseLogo} />
-                                        </div>
+                                        <Image src={promisePanel.promises[i].promiseLogo} width="50" justify="center" pading="3" />
                                         <h2 className="px-3">{promisePanel.promises[i].promiseHeading}</h2>
                                     </div>
                                 )

@@ -1,0 +1,11 @@
+// Image 
+
+.image-container {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+
+    &-image {
+        object-fit: cover;
+    }
+}

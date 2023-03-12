@@ -1,5 +1,6 @@
 import React from "react"
 import Icon from "../ui/Icon"
+import Image from "../ui/Image"
 
 const TestimonialCard = ({ testimonial }) => {
     return(
@@ -11,9 +12,7 @@ const TestimonialCard = ({ testimonial }) => {
                             return <div className="testimonial-card__rating-star" key={i}><Icon name="star" color="#EC6608" height="20" width="20" /></div>
                         })}
                     </div>
-                    <div className="testimonial-card__image-container">
-                        <img className="w-75 testimonial-card__image-container-image" src={testimonial.testimonialLogo} alt={testimonial.testimonialLogo} />
-                    </div>
+                    <Image src={testimonial.testimonialLogo} width="75" justify="start" padding="0" />
                     <p className="body-copy">{testimonial.testimonial}</p>
                     <p className="body-copy">{testimonial.client}</p>
                 </div>

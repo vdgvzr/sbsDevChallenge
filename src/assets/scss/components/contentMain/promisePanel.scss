@@ -7,18 +7,6 @@
     position: relative;
     margin-top: 250px;
 
-    &__image-container {
-        min-height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &-image {
-            object-fit: cover;
-            width: 100px;
-        }
-    }
-
     .contact-panel {
         position: absolute;
         color: $sbs-primary-black !important;
@@ -27,6 +15,7 @@
         z-index: 2;
         width: 40%;
         padding: 5%;
+        box-shadow: 5px 21px 16px 0px rgba(0,0,0,0.75);
 
         &__text {
             margin-bottom: 5rem;
@@ -46,6 +35,7 @@
             -ms-transform: skew(0deg, -15deg);
             -webkit-transform: skew(0deg, -15deg);
             transform: skew(0deg, -15deg);
+            box-shadow: 5px 21px 16px 0px rgba(0,0,0,0.75);
         }
     }
 }

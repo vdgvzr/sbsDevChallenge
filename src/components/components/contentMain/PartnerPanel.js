@@ -1,5 +1,6 @@
 import React from "react"
 import Heading from "../ui/Heading"
+import Image from "../ui/Image"
 
 const PartnerPanel = ({ contentMain }) => {
     const partnerPanel = contentMain[5].partnerPanel
@@ -20,8 +21,8 @@ const PartnerPanel = ({ contentMain }) => {
                             <div className="col-12 d-flex p-0">
                                     {[...Array(partnerPanel.logos.length)].map((logo, i) => {
                                         return(
-                                            <div key={i} className="partner-panel__image-container">
-                                                <img className="w-100 partner-panel__image-container-image px-3" src={partnerPanel.logos[i].logo} alt={partnerPanel.logos[i].logo} />
+                                            <div key={i} >
+                                                <Image src={partnerPanel.logos[i].logo} width="100" justify="center" padding="3" />
                                             </div>
                                         )
                                     })} 

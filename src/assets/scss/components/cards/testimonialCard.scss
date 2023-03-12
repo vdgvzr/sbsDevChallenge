@@ -20,16 +20,6 @@
         }
     }
 
-    &__image-container {
-        min-height: 150px;
-        display: flex;
-        align-items: center;
-
-        &-image {
-            object-fit: cover;
-        }
-    }
-
     .body-copy {
         padding-right: 10%;
     }

@@ -6,6 +6,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 1e1a54b2-7ca2-4179-a7d4-3b9f10675bab # Site Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55a16559-968b-4d15-8783-7903d7ba447c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 73a93e35-26a2-4275-9e3e-2ac7f3225c85 # Footer Text
             instructions: null
             label: null

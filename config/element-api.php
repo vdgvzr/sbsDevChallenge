@@ -239,10 +239,11 @@ return [
                             'jsonUrl' => UrlHelper::url("{$page->slug}.json")
                         ];
                     }
-
+                    $logo = $entry->siteLogo->one();
                     return [
                         'pages' => $pageData,
                         'footerText' => $entry->footerText,
+                        'logo' => $logo ? $logo->getUrl() : null,
                     ];
                 },
                 'pretty' => true,

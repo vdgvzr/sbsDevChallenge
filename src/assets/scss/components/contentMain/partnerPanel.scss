@@ -8,14 +8,4 @@
         border-top: 1px solid $sbs-tonal-dark-blue;
         border-bottom: 1px solid $sbs-tonal-dark-blue;
     }
-
-    &__image-container {
-        min-height: 150px;
-        display: flex;
-        align-items: center;
-
-        &-image {
-            object-fit: cover;
-        }
-    }
 }

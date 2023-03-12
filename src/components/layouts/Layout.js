@@ -1,4 +1,5 @@
 import React from "react"
+import Footer from "../globals/Footer"
 
 const Layout = ({ children, site }) => {
     return(
@@ -9,9 +10,11 @@ const Layout = ({ children, site }) => {
                     <main className="">
                         {children}
                     </main>
-                    {/* <footer className="">
-                        {site?.footerText}
-                    </footer> */}
+                    <footer className="">
+                        <Footer 
+                            site={site}
+                        />
+                    </footer>
                 </div>
             </div>
         </>
