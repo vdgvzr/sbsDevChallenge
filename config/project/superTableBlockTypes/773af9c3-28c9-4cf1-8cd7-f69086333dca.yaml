@@ -1,0 +1,105 @@
+changedFieldIndicator: 166848639
+field: c3255379-fc6a-41d8-9b16-75e971ae675d # Promise
+fieldLayouts:
+  55f64850-f44c-443f-bb26-68e1d4fc84a5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 151e9d65-b232-4825-aea9-d62cd0476eeb # Promise Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02c9c63b-5de1-4c62-b41f-3f3d45e0cee6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a6f69c50-e0a6-4c9b-9f96-c4ab15c46a7d # Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26c249e2-cd49-44cc-9157-f3c6de81b274
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 20f440fb-a744-4dab-acb8-e28dd5877a44
+        userCondition: null
+fields:
+  151e9d65-b232-4825-aea9-d62cd0476eeb: # Promise Heading
+    columnSuffix: nxmhoned
+    contentColumnType: text
+    fieldGroup: null
+    handle: promiseHeading
+    instructions: null
+    name: 'Promise Heading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a6f69c50-e0a6-4c9b-9f96-c4ab15c46a7d: # Logo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: logo
+    instructions: null
+    name: Logo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:3760a55b-6fd8-4b26-9ee8-50b4c91095d2' # Images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:20fef043-e524-4439-8d77-05ba8991665c' # Logos
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets

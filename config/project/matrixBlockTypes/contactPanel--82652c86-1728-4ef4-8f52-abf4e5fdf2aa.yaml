@@ -1,0 +1,143 @@
+field: 8a506770-a48f-4247-a45f-7c487a68e5c8 # Content Main
+fieldLayouts:
+  d43abb2a-73eb-41ac-bc2f-ae20d743faa5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9189bcfc-8d21-416c-9f83-59b64ee5c5f4 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2d4521f-a505-43d9-9144-85dc1898214c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7d8ea23a-7efa-4217-a637-983eb72b8b1c # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2eab11c1-cb0f-4b2b-a9f7-6db57e2b4fc1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b896b734-709a-41bc-8cc8-598231afb85d # LinkCta
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 951733aa-c930-4bd6-bd0c-330a0e8cb73e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5c377bb0-0364-4e46-9b7a-173522c46213
+        userCondition: null
+fields:
+  7d8ea23a-7efa-4217-a637-983eb72b8b1c: # Text
+    columnSuffix: xbzjqkaw
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  9189bcfc-8d21-416c-9f83-59b64ee5c5f4: # Heading
+    columnSuffix: vwatjlos
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b896b734-709a-41bc-8cc8-598231afb85d: # LinkCta
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkcta
+    instructions: null
+    name: LinkCta
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1755809454
+      columns:
+        __assoc__:
+          -
+            - e09be07d-ad22-4749-9553-21a2a415a998 # Link Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - fc364292-deda-4f37-bf55-2c1dd07b295c # Link Url
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 8aaf6ff5-f2f0-4547-8e05-b3eadc9ab336 # External
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_11_linkcta}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: contactPanel
+name: 'Contact Panel'
+sortOrder: 8

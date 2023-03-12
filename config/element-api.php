@@ -158,6 +158,51 @@ function transformContentMain(Entry $entry){
                     ]
                 ];
                 break;
+            case 'promisePanel':
+                $promises = [];
+                foreach ($block->promise as $row){
+                    $promiseLogo = $row->logo->one();
+                    $promises[] = [
+                        'promiseHeading' => $row->promiseHeading,
+                        'promiseLogo' => $promiseLogo ? $promiseLogo->getUrl() : null,
+                    ];
+                }
+                $button = [];
+                foreach ($block->ctaButton as $row){
+                    $button[] = [
+                        'buttonText' => $row->buttonText,
+                        'buttonUrl' => [
+                            'linkUrl' => $row->buttonUrl->linkUrl,
+                            'external' => $row->buttonUrl->external,
+                        ]
+                    ];
+                }
+                $matrixBlocks[] = [
+                    'promisePanel' => [
+                        'heading' => $block->heading,
+                        'text' => $block->text,
+                        'promises' => $promises,
+                        'ctaButton' => $button,
+                    ]
+                ];
+                break;
+            case 'contactPanel':
+                $linkCta = [];
+                foreach ($block->linkcta as $row){
+                    $linkCta[] = [
+                        'linkText' => $row->linkText,
+                        'linkUrl' => $row->linkUrl,
+                        'external' => $row->external,
+                    ];
+                }
+                $matrixBlocks[] = [
+                    'contactPanel' => [
+                        'heading' => $block->heading,
+                        'text' => $block->text,
+                        'linkCta' => $linkCta,
+                    ]
+                ];
+                break;
         }
     }
     return $matrixBlocks;

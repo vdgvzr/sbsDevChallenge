@@ -17,7 +17,7 @@ const PartnerPanel = ({ contentMain }) => {
                 <div className="container-fluid partner-panel__logo-container px-0">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 d-flex">
+                            <div className="col-12 d-flex p-0">
                                     {[...Array(partnerPanel.logos.length)].map((logo, i) => {
                                         return(
                                             <div key={i} className="partner-panel__image-container">

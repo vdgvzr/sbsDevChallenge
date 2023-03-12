@@ -6,6 +6,7 @@ import TestimonialCarousel from "../../components/contentMain/TestimonialsCarous
 import CtaPanel from "../../components/contentMain/CtaPanel"
 import TextWithImagePanel from "../../components/contentMain/TextWithImagePanel"
 import PartnerPanel from "../../components/contentMain/PartnerPanel"
+import PromisePanel from "../../components/contentMain/PromisePanel"
 
 const Home = ({ page }) => {
     return(
@@ -29,6 +30,9 @@ const Home = ({ page }) => {
                 contentMain={page.contentMain}
             />
             <PartnerPanel
+                contentMain={page.contentMain}
+            />
+            <PromisePanel
                 contentMain={page.contentMain}
             />
         </>
