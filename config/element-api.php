@@ -81,6 +81,26 @@ function transformContentMain(Entry $entry){
                     ]
                 ];
                 break;
+            case 'testimonialscarousel':
+                $testimonials = [];
+                foreach ($block->testimonials as $row){
+                    $testimonialLogo = $row->logo->one();
+                    $testimonials[] = [
+                        'testimonialTitle' => $row->title,
+                        'rating' => $row->rating,
+                        'testimonialLogo' => $testimonialLogo ? $testimonialLogo->getUrl() : null,
+                        'testimonial' => $row->redactor->getRawContent(),
+                        'client' => $row->client,
+                        'url' => $row->url
+                    ];
+                }
+                $matrixBlocks[] = [
+                    'testimonialscarousel' => [
+                        'heading' => $block->heading,
+                        'testimonials' => $testimonials
+                    ]
+                ];
+                break;
         }
     }
     return $matrixBlocks;

@@ -29,6 +29,8 @@
     }
 
     &:hover {
+        text-decoration: underline;
+
         svg {
             transform: translateX(10px);
         }

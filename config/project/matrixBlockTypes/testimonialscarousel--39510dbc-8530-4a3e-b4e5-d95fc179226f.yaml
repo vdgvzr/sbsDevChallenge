@@ -1,45 +1,45 @@
 field: 8a506770-a48f-4247-a45f-7c487a68e5c8 # Content Main
 fieldLayouts:
-  5d82a821-8eba-4982-94d3-f161e07a06fa:
+  242b0eec-88f8-47ee-846c-ed8ed7d78a38:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 854bb6b0-99a8-4691-ab08-04888dd939ee # Heading
+            fieldUid: 19181c1b-be03-4fa3-84af-af5afdafd089 # Heading
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9dcf6f78-0442-4e8c-b371-74454fe19847
+            uid: 94ad66b4-0104-4bf3-9980-60d4bb3d0148
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 783b8405-7be7-427f-a2aa-408f21122055 # Products
+            fieldUid: 45e70cb5-2298-4e36-9b1b-27626b1427bb # Testimonials
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 52358001-1827-4289-b4c1-fdc7672be6b6
+            uid: 38846c7a-f0bc-4267-88a5-c79a80a8e43f
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: cc9bb72e-f1ed-429d-ad25-bece732b6e46
+        uid: 105e63a9-48d6-4c82-962f-7456bbb10d61
         userCondition: null
 fields:
-  783b8405-7be7-427f-a2aa-408f21122055: # Products
+  45e70cb5-2298-4e36-9b1b-27626b1427bb: # Testimonials
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
-    handle: products
+    handle: testimonials
     instructions: null
-    name: Products
+    name: Testimonials
     searchable: false
     settings:
       allowSelfRelations: false
@@ -62,15 +62,15 @@ fields:
       selectionLabel: null
       showSiteMenu: true
       sources:
-        - 'section:a1e1b42d-228a-474f-b9b8-c98a243529dc' # Products
+        - 'section:40d026ad-356b-4c89-89a4-1018f59e3cdb' # Testimonials
       targetSiteId: null
       validateRelatedElements: false
       viewMode: null
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  854bb6b0-99a8-4691-ab08-04888dd939ee: # Heading
-    columnSuffix: lcijuwqr
+  19181c1b-be03-4fa3-84af-af5afdafd089: # Heading
+    columnSuffix: wydfwlfx
     contentColumnType: text
     fieldGroup: null
     handle: heading
@@ -89,6 +89,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-handle: productscarousel
-name: productsCarousel
-sortOrder: 2
+handle: testimonialscarousel
+name: testimonialsCarousel
+sortOrder: 3

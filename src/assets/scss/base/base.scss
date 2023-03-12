@@ -1,0 +1,19 @@
+// Base
+
+.h-scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+    
+.h-scrollable [class*="col"] {
+    display: inline-block;
+    float: none;
+    white-space: normal;
+    vertical-align: top;
+}

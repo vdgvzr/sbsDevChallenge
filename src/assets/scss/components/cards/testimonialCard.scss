@@ -1,0 +1,17 @@
+// Testimonial Card
+
+.testimonial-card {
+    transition: all 100ms ease-in-out;
+    border-radius: 0 !important;
+    border: none !important;
+
+    &__rating {
+        border: 1px solid $sbs-primary-orange;
+        width: fit-content;
+
+        &-star {
+            display: inline-block;
+            padding: 5px;
+        }
+    }
+}
