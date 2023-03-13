@@ -1,5 +1,9 @@
 // Base
 
+main {
+    overflow: hidden;
+}
+
 .h-scrollable {
     overflow-x: auto;
     white-space: nowrap;

@@ -5,9 +5,13 @@
     background-color: $sbs-primary-dark-blue;
     color: $sbs-primary-white;
     transition: all 100ms ease-in-out;
+    overflow: hidden;
+    position: relative;
 
     &__inner {
         padding: 75px 0;
         background-color: $sbs-tonal-dark-blue;
+        position: relative;
+        overflow: hidden;
     }
 }
