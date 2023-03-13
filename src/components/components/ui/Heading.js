@@ -3,7 +3,7 @@ import React from "react"
 const Heading = ({ heading, margin }) => {
     return(
         <>
-            <h1 className={margin ? "h1-small" : "h1-small m-0"}>{heading}</h1>
+            <h1 className={margin ? "h1-default" : "h1-default m-0"}>{heading}</h1>
         </>
     )
 }

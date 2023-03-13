@@ -19,7 +19,7 @@ const ProductsCarousel = ({ contentMain }) => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
-                                <div className="d-flex justify-content-between align-items-center">
+                                <div className="d-flex products-carousel__header justify-content-between align-items-center pt-lg-0 pt-3">
                                     <Heading heading={productsCarousel.heading} margin={false} />
                                     <div className="d-flex align-items-center products-carousel__button-container">
                                         <CarouselButton onClick={() => scroll(-card.current.offsetWidth)} icon="chevron-left" />
@@ -35,7 +35,7 @@ const ProductsCarousel = ({ contentMain }) => {
                         <div className="row d-block">
                             {productsCarousel.products.map((product, i) => {
                                 return(
-                                    <div key={i} className="col-3" ref={card}>
+                                    <div key={i} className="col-lg-3 col-10" ref={card}>
                                         <a href={product.productUrl}>
                                             <ProductsCard product={product}/>
                                         </a>

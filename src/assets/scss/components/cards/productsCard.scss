@@ -11,6 +11,12 @@
     &__image {
         position: relative;
 
+        height: 20vw;
+
+        @include media-breakpoint-down(lg) {
+            height: 400px;
+        }
+
         &:after {
             content: " ";
             position: absolute;

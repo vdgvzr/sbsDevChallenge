@@ -13,13 +13,13 @@ const Home = ({ page }) => {
         <>
             {/* <HomepageHeader 
                 homepageHeader={page.homepageHeader}
-            /> */}
+            />
             <IntroTextPanel 
                 contentMain={page.contentMain}
-            />{/* 
+            /> */}
             <ProductsCarousel
                 contentMain={page.contentMain}
-            />
+            />{/* 
             <TestimonialCarousel
                 contentMain={page.contentMain}
             />

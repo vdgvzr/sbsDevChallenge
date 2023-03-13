@@ -10,7 +10,10 @@
     position: relative;
     border: 1px solid $sbs-primary-dark-blue;
     background-color: transparent;
-    margin-left: 30px;
+
+    @include media-breakpoint-up(lg) {
+        margin-left: 30px;
+    }
 
     svg {
         position: relative;

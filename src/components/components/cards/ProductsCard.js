@@ -10,7 +10,6 @@ const ProductsCard = ({ product }) => {
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     width: '100%',
-                    height: '20vw',
                 }}></div>
                 <div className="card-body pb-3">
                     <h5 className="card-title">{product.productTitle}</h5>
