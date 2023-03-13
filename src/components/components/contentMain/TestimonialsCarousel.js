@@ -19,9 +19,9 @@ const TestimonialCarousel = ({ contentMain }) => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
-                                <div className="d-flex justify-content-between align-items-center">
+                                <div className="d-flex testimonials-carousel__header justify-content-between align-items-center">
                                     <Heading heading={testimonialCarousel.heading} margin={false} />
-                                    <div className="d-flex align-items-center testimonials-carousel__button-container">
+                                    <div className="d-flex align-items-center testimonials-carousel__button-container d-none d-lg-block">
                                         <CarouselButton onClick={() => scroll(-card.current.offsetWidth)} icon="chevron-left" />
                                         <CarouselButton onClick={() => scroll(card.current.offsetWidth)} icon="chevron-right" />
                                     </div>
@@ -34,7 +34,7 @@ const TestimonialCarousel = ({ contentMain }) => {
                     <div className="row d-block">
                         {testimonialCarousel.testimonials.map((testimonial, i) => {
                             return(
-                                <div key={i} className="col-4" ref={card}>
+                                <div key={i} className="col-lg-4 col-12" ref={card}>
                                     <TestimonialCard testimonial={testimonial}/>
                                 </div>
                             )

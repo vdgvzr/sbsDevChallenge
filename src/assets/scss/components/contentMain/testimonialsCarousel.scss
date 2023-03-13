@@ -8,11 +8,18 @@
         background-color: $sbs-tonal-light-blue;
     }
 
-    &__wrapper {
-        background-color: $sbs-primary-white;
+    &__header {
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+        }
     }
 
-    &__button-container {
+    &__wrapper {
+        background-color: $sbs-primary-white;
 
+        @include media-breakpoint-down(lg) {
+            overflow: visible !important;
+            white-space: break-spaces !important;
+        }
     }
 }
