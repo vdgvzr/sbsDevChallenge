@@ -9,28 +9,30 @@ const CtaPanel = ({ contentMain }) => {
     return(
         <>
             <div className="cta-panel">
-                <Icon 
-                    name="trapeze" 
-                    stroke="#EC6608" 
-                    fill="none" 
-                    height="500px" 
-                    width="500px" 
-                    position="absolute"
-                    top="46%"
-                    left="15%"
-                    zIndex="1"
-                />
-                <Icon 
-                    name="trapeze" 
-                    stroke="#EC6608" 
-                    fill="none" 
-                    height="500px" 
-                    width="500px" 
-                    position="absolute"
-                    top="11%"
-                    right="-14%"
-                    zIndex="1"
-                />
+                <div className="d-none d-lg-block">
+                    <Icon 
+                        name="trapeze" 
+                        stroke="#EC6608" 
+                        fill="none" 
+                        height="500px" 
+                        width="500px" 
+                        position="absolute"
+                        top="46%"
+                        left="15%"
+                        zIndex="1"
+                    />
+                    <Icon 
+                        name="trapeze" 
+                        stroke="#EC6608" 
+                        fill="none" 
+                        height="500px" 
+                        width="500px" 
+                        position="absolute"
+                        top="11%"
+                        right="-14%"
+                        zIndex="1"
+                    />
+                </div>
                 <div className="container-fluid p-0">
                     <div className="container cta-panel__inner">
                         <Icon 

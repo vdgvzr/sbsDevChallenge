@@ -21,7 +21,7 @@ const TestimonialCarousel = ({ contentMain }) => {
                             <div className="col-12">
                                 <div className="d-flex testimonials-carousel__header justify-content-between align-items-center">
                                     <Heading heading={testimonialCarousel.heading} margin={false} />
-                                    <div className="d-flex align-items-center testimonials-carousel__button-container d-none d-lg-block">
+                                    <div className="d-flex align-items-center testimonials-carousel__button-container d-none d-lg-flex">
                                         <CarouselButton onClick={() => scroll(-card.current.offsetWidth)} icon="chevron-left" />
                                         <CarouselButton onClick={() => scroll(card.current.offsetWidth)} icon="chevron-right" />
                                     </div>

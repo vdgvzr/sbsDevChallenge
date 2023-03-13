@@ -19,13 +19,13 @@ const Home = ({ page }) => {
             />
             <ProductsCarousel
                 contentMain={page.contentMain}
-            /> */}
+            />
             <TestimonialCarousel
                 contentMain={page.contentMain}
-            />{/* 
+            /> */}
             <CtaPanel
                 contentMain={page.contentMain}
-            />
+            />{/* 
             <TextWithImagePanel
                 contentMain={page.contentMain}
             />
