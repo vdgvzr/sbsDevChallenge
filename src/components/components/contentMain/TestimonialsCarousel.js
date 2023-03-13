@@ -30,7 +30,7 @@ const TestimonialCarousel = ({ contentMain }) => {
                         </div>
                     </div>
                 </div>
-                <div className="container h-scrollable p-0 p-5 my-5 testimonials-carousel__wrapper" ref={carousel}>
+                <div className="container h-scrollable p-0 p-5 testimonials-carousel__wrapper" ref={carousel}>
                     <div className="row d-block">
                         {testimonialCarousel.testimonials.map((testimonial, i) => {
                             return(

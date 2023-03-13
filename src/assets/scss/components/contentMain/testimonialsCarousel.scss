@@ -4,6 +4,10 @@
     padding: 50px 0;
     background-color: $sbs-tonal-light-blue;
 
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 0;
+    }
+
     .container-fluid:nth-child(2) {
         background-color: $sbs-tonal-light-blue;
     }
@@ -16,10 +20,12 @@
 
     &__wrapper {
         background-color: $sbs-primary-white;
+        margin: 3rem 0;
 
         @include media-breakpoint-down(lg) {
             overflow: visible !important;
             white-space: break-spaces !important;
+            margin-bottom: 0;
         }
     }
 }

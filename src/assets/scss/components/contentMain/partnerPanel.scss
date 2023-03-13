@@ -2,23 +2,51 @@
 
 .partner-panel {
     padding: 0 0 50px 0;
+    height: 300px;
     position: relative;
 
-    &__logo-container {
-        @include media-breakpoint-up(lg) {
-            border-top: 1px solid $sbs-tonal-dark-blue;
-            border-bottom: 1px solid $sbs-tonal-dark-blue;
+    &__carousel-container {
+        margin: auto;
+        position: relative;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+
+    &__carousel {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        border-top: 1px solid $sbs-tonal-darker-blue;
+        border-bottom: 1px solid $sbs-tonal-darker-blue;
+
+        &-item {
+            width: 175px !important;
+            cursor: pointer;
+            transition: width 100ms ease-in-out;
+
+            &:hover {
+                width: 187.5px !important;
+            }
         }
+
+        &:hover {
+            animation-play-state: paused;
+        }
+        
 
         @include media-breakpoint-down(lg) {
             overflow: visible;
             white-space: break-spaces;
         }
     }
+}
 
-    &__mobile-divider {
-        @include media-breakpoint-down(lg) {
-            border-top: 1px solid $sbs-tonal-dark-blue;
-        }
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-175px * 5))
     }
 }

@@ -1,9 +1,23 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import Heading from "../ui/Heading"
 import Image from "../ui/Image"
 
 const PartnerPanel = ({ contentMain }) => {
     const partnerPanel = contentMain[5].partnerPanel
+    const carouselSlider = useRef(null)
+    const list = useRef(null)
+    const items = useRef([])
+
+    useEffect(() => {
+        let width = 0
+        items.current.forEach(item => {
+            let clone = item.cloneNode(true)
+            list.current.append(clone)
+            width += item.clientWidth
+            list.current.style.width = `${width}`
+        })
+    
+    }, [])
 
     return(
         <>
@@ -14,19 +28,19 @@ const PartnerPanel = ({ contentMain }) => {
                             <Heading heading={partnerPanel.heading} />
                         </div>
                     </div>
-                    <div className="container partner-panel__mobile-divider d-block d-lg-none my-3"></div>
                 </div>
-                <div className="container-fluid h-scrollable partner-panel__logo-container px-0">
-                    {[...Array(partnerPanel.logos.length)].map((logo, i) => {
-                        return(
-                            <div key={i} className="col-2half col-12">
-                                <Image src={partnerPanel.logos[i].logo} width="100" justify="center" padding="5" />
-                            </div>
-                        )
-                    })}
+                <div className="partner-panel__carousel-container" ref={carouselSlider}> {/* slider */}
+                    <div className="container-fluid partner-panel__carousel px-0" ref={list}> {/* slide track */}
+                        {[...Array(partnerPanel.logos.length)].map((logo, i) => {
+                            return(
+                                <div key={i} className="partner-panel__carousel-item" ref={ref=>items.current.push(ref)}>
+                                    <Image src={partnerPanel.logos[i].logo} width="100" justify="center" padding="3" />
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
                 <div className="container d-block d-lg-none mt-5">
-                    <div className="container partner-panel__mobile-divider my-3"></div>
                 </div>
             </div>
         </>
