@@ -3,7 +3,6 @@ import VerticalCta from "../ buttons/VerticalCta"
 import ProjectsPanelButton from "../ buttons/ProjectsPanelButton"
 import LinkUrl from "../ui/Link"
 import Icon from "../ui/Icon"
-import { handleZIndex } from "../../../assets/js/main"
 
 const HomepageHeader = ({ homepageHeader }) => {
     const headerContent = homepageHeader[0].headerContent
@@ -27,8 +26,6 @@ const HomepageHeader = ({ homepageHeader }) => {
         [setProject, projects]
     })
 
-    handleZIndex(dataAddZIndex.current)
-
     return(
         <>
             <div className="homepage-header" style={{
@@ -42,30 +39,60 @@ const HomepageHeader = ({ homepageHeader }) => {
                     type="button"
                     buttonText={contactCta.cta}
                     url={contactCta.url}
-                    ref={(ref) => ref && dataAddZIndex.current.push(ref)}
                 />
                 <Icon 
                     name="sbs" 
-                    stroke="#fff" 
+                    stroke="rgba(255,255,255,0.4)" 
                     fill="none" 
-                    height="600px" 
-                    width="600px" 
+                    height="60vw" 
+                    width="60vw" 
                     position="absolute"
-                    top="0"
-                    right="0"
+                    top="35%"
+                    right="-30%"
+                />
+                <Icon 
+                    name="sbs" 
+                    stroke="rgba(255,255,255,0.4)" 
+                    fill="none" 
+                    height="20vw" 
+                    width="20vw" 
+                    position="absolute"
+                    top="55%"
+                    right="-3%"
+                />
+                <Icon 
+                    name="sbs" 
+                    stroke="none" 
+                    fill="rgba(255,255,255,0.4)" 
+                    height="25vw" 
+                    width="25vw" 
+                    position="absolute"
+                    top="40%"
+                    right="15%"
+                />
+                <Icon 
+                    name="sbs" 
+                    stroke="none" 
+                    fill="rgba(255,255,255,0.4)" 
+                    height="35vw" 
+                    width="35vw" 
+                    position="absolute"
+                    top="55%"
+                    right="-3%"
+                    rotate="180"
                 />
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
                         <div className="col-12 p-0">
                             <div className="row">
-                                <div className="col-lg-8 col-12" ref={(ref) => ref && dataAddZIndex.current.push(ref)}>
+                                <div className="col-lg-8 col-12 z-index-2">
                                     <h1 className="homepage-header__heading h1-large mb-5">{headerContent.headerText}</h1>
                                     <p className="homepage-header__sub-heading">{headerContent.subHeader}</p>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12">
-                                    <div className="projects-panel d-flex h-100" ref={(ref) => ref && dataAddZIndex.current.push(ref)}>
+                                    <div className="projects-panel d-flex h-100 z-index-2">
                                         <div className="d-flex flex-column">
                                             <ProjectsPanelButton
                                                 icon="chevron-right"

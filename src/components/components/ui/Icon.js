@@ -2,7 +2,7 @@ import React from "react";
 import Icons from "/src/assets/svg/icons.svg";
 import PropTypes from 'prop-types';
 
-const Icon = ({ name, stroke, fill, width, height, position, top, right, bottom, left }) => (
+const Icon = ({ name, stroke, fill, width, height, position, top, right, bottom, left, rotate }) => (
     <svg 
         className={`icon icon-${name} position-${position}`} 
         fill={fill}
@@ -14,6 +14,7 @@ const Icon = ({ name, stroke, fill, width, height, position, top, right, bottom,
             right: `${right}`,
             bottom: `${bottom}`,
             left: `${left}`,
+            transform: `rotate(${rotate}deg)`
         }}>
         <use xlinkHref={`${Icons}#icon-${name}`} />
     </svg>

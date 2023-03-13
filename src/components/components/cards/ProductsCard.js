@@ -22,6 +22,7 @@ const ProductsCard = ({ product }) => {
                         theme="dark"
                         icon="chevron-right"
                         justify="between"
+                        disabled={true}
                     />
                 </div>
             </div>
