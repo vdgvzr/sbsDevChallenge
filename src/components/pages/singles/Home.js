@@ -11,12 +11,12 @@ import PromisePanel from "../../components/contentMain/PromisePanel"
 const Home = ({ page }) => {
     return(
         <>
-            <HomepageHeader 
+            {/* <HomepageHeader 
                 homepageHeader={page.homepageHeader}
-            />
+            /> */}
             <IntroTextPanel 
                 contentMain={page.contentMain}
-            />
+            />{/* 
             <ProductsCarousel
                 contentMain={page.contentMain}
             />
@@ -34,7 +34,7 @@ const Home = ({ page }) => {
             />
             <PromisePanel
                 contentMain={page.contentMain}
-            />
+            /> */}
         </>
     )
 }

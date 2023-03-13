@@ -86,9 +86,9 @@ const IntroTextPanel = ({ contentMain }) => {
                 <div className="intro-text-panel__panel"></div>
                 <div className="container h-100">
                     <div className="row align-items-center justify-content-end h-100">
-                        <div className="col-6">
+                        <div className="col-lg-6 col-10 p-5">
                             <Heading heading={introTextPanel.introText} />
-                            <p>{introTextPanel.subHeader}</p>
+                            <p className="body-copy">{introTextPanel.subHeader}</p>
                         </div>
                     </div>
                 </div>

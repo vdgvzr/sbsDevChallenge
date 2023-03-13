@@ -31,3 +31,10 @@
     z-index: 1090;
     position: relative;
 }
+
+// Responsive height
+.h-lg-100 {
+    @include media-breakpoint-up(lg) {
+        height: 100% !important;
+    }
+}

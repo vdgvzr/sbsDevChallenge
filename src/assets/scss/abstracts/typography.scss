@@ -1,61 +1,66 @@
 // Typography
 
-.h1-large {
+.h1-default {
     @include figtree-bold;
     font-size: var(--h1-large-font-size);
     line-height: var(--h1-large-line-height);
+
+    @include media-breakpoint-down(lg) {
+        font-size: var(--h1-small-font-size);
+        line-height: var(--h1-small-line-height);
+    }
 }
 
-.h1-small {
-    @include figtree-bold;
-    font-size: var(--h1-small-font-size);
-    line-height: var(--h1-small-line-height);
-}
-
-.h2-large {
+.h2-default {
     @include figtree-bold;
     font-size: var(--h2-large-font-size);
     line-height: var(--h2-large-line-height);
+    
+    @include media-breakpoint-down(lg) {
+        font-size: var(--h2-small-font-size);
+        line-height: var(--h2-small-line-height);
+    }
 }
 
-.h2-small {
-    @include figtree-bold;
-    font-size: var(--h2-small-font-size);
-    line-height: var(--h2-small-line-height);
-}
-
-.h3-large {
+.h3-default {
     @include figtree-bold;
     font-size: var(--h3-large-font-size);
     line-height: var(--h3-large-line-height);
+
+    @include media-breakpoint-down(lg) {
+        font-size: var(--h3-small-font-size);
+        line-height: var(--h3-small-line-height);
+    }
 }
 
-.h3-small {
-    @include figtree-bold;
-    font-size: var(--h3-small-font-size);
-    line-height: var(--h3-small-line-height);
-}
-
-.h4-large {
+.h4-default {
     @include figtree-bold;
     font-size: var(--h4-large-font-size);
     line-height: var(--h4-large-line-height);
-}
 
-.h4-small {
-    @include figtree-bold;
-    font-size: var(--h4-small-font-size);
-    line-height: var(--h4-small-line-height);
+    @include media-breakpoint-down(lg) {
+        font-size: var(--h4-small-font-size);
+        line-height: var(--h4-small-line-height);
+    }
 }
 
 p {
     @include figtree-medium;
     font-size: var(--p-font-size);
     line-height: var(--p-line-height);
+
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+
+    }
 }
 
 .body-copy {
     @include figtree;
     font-size: var(--body-copy-font-size);
     line-height: var(--body-copy-line-height);
+
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+    }
 }

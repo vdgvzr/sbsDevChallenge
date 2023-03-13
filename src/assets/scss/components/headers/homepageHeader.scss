@@ -3,9 +3,11 @@
 .homepage-header {
     background-color: $sbs-tonal-blue;
     color: $sbs-primary-white;
-    min-height: 100vh;
     height: 100%;
     padding: 50px;
+    @include media-breakpoint-up(lg) {
+        min-height: 100vh;
+    }
 
     .vertical-cta {
         position: absolute;
@@ -22,14 +24,40 @@
         /* border-radius: var(--border-radius); */
         box-shadow: var(--box-shadow);
 
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+        }
+
+        .container {
+            @include media-breakpoint-up(lg) {
+                padding-left: 3rem;
+            }
+        }
+
+        &__inner {
+            flex-direction: column;
+        
+            @include media-breakpoint-down(lg) {
+                flex-direction: row-reverse;
+            }
+        }
+
         h3 {
             width: 20%;
         }
 
+        &__link {
+            @include media-breakpoint-down(lg) {
+                justify-content: center !important;
+            }
+        }
+
         &__image {
             width: 100%;
-            border: 10px solid $sbs-primary-dark-blue;
-            border-radius: var(--border-radius);
+            
+            @include media-breakpoint-down(lg) {
+                height: 120px;
+            }
         }
         
     }

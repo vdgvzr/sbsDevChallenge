@@ -33,6 +33,10 @@
         bottom: 50px;
         right: 0;
         z-index: -1;
+
+        @include media-breakpoint-down(lg) {
+            width: 90%;
+        }
     }
 
     .container {

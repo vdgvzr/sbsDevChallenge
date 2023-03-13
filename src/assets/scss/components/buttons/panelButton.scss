@@ -8,13 +8,29 @@
     justify-content: center;
     background-color: transparent;
     border: none;
-    border-right: 1px solid $sbs-primary-white;
+
+    @include media-breakpoint-up(lg) {
+        border-right: 1px solid $sbs-primary-white;
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid $sbs-primary-white;
+    }
 
     &:hover {
         background-color: $sbs-tonal-blue;
     }
 
     &:first-of-type {
-        border-bottom: 1px solid $sbs-primary-white;
+        @include media-breakpoint-up(lg) {
+            border-bottom: 1px solid $sbs-primary-white;
+        }
+
+        @include media-breakpoint-down(lg) {
+            border-left: 1px solid $sbs-primary-white;
+        }
     }
 }
