@@ -4,8 +4,16 @@
     background-color: $sbs-tonal-darker-blue;
     color: $sbs-primary-white;
 
-    &__heading {
-        padding-right: 10rem;
+    &__row {
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__h2 {
+        @include media-breakpoint-up(lg) {
+            padding-right: 10rem;
+        }
     }
 
     &__email-form {
@@ -71,8 +79,16 @@
         border-bottom: 1px solid $sbs-primary-white;
     }
 
+    &__border-top {
+        @include media-breakpoint-down(lg) {
+            border-top: 1px solid $sbs-primary-white;
+        }
+    }
+
     &__border-right {
-        border-right: 1px solid $sbs-primary-white;
+        @include media-breakpoint-up(lg) {
+            border-right: 1px solid $sbs-primary-white;
+        }
     }
 
     svg {

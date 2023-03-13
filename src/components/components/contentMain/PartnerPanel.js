@@ -19,7 +19,7 @@ const PartnerPanel = ({ contentMain }) => {
                 <div className="container-fluid h-scrollable partner-panel__logo-container px-0">
                     {[...Array(partnerPanel.logos.length)].map((logo, i) => {
                         return(
-                            <div key={i} className="col-5 col-12">
+                            <div key={i} className="col-2half col-12">
                                 <Image src={partnerPanel.logos[i].logo} width="100" justify="center" padding="5" />
                             </div>
                         )

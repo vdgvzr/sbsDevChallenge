@@ -41,7 +41,7 @@
 
 // Custom grid
 
-.col-5 {
+.col-2half {
     @include media-breakpoint-up(lg) {
         flex: 0 0 auto;
         width: 20%;

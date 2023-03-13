@@ -31,10 +31,10 @@ const Home = ({ page }) => {
             />
             <PartnerPanel
                 contentMain={page.contentMain}
-            /> */}
+            />
             <PromisePanel
                 contentMain={page.contentMain}
-            />
+            /> */}
         </>
     )
 }

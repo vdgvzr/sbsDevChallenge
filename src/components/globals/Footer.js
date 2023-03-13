@@ -1,20 +1,21 @@
 import React from "react"
 import Icon from "../components/ui/Icon"
 import Image from "../components/ui/Image"
+import Heading from "../components/ui/Heading"
 
 const Footer = ({ site }) => {
     return(
         <>
             <div className="footer">
-                <div className="container-fluid p-0 footer__border-bottom">
-                    <div className="row p-0">
-                        <div className="col-5 p-5 footer__border-right">
+                <div className="container-fluid footer__border-bottom">
+                    <div className="row p-0 footer__row">
+                        <div className="col-lg-5 p-5 col-12 footer__border-right">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
                                         <div className="row p-0">
                                             <div className="col-12 p-0">
-                                                <h2 className="footer__heading mb-4 mt-5">Get more from SBS Cladding.</h2>
+                                                <Heading heading="Get more from SBS Cladding." />
                                                 <p className="body-copy mb-5">Join our mailing list to get all the latest industry news.</p>
                                                 <form className="footer__email-form">
                                                     <div className="d-flex mb-4">
@@ -34,10 +35,10 @@ const Footer = ({ site }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-7">
-                            <div className="row p-5 footer__border-bottom">
-                                <div className="col-12 p-0">
-                                    <div className="row pt-5">
+                        <div className="col-lg-7 col-12">
+                            <div className="row footer__border-bottom footer__border-top">
+                                <div className="col-12">
+                                    <div className="row pt-5 footer__row">
                                         <div className="col-6">
                                             <ul>
                                                 <li>
@@ -85,21 +86,21 @@ const Footer = ({ site }) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row p-5">
-                                <div className="col-6 p-0">
+                            <div className="row py-lg-0 py-4">
+                                <div className="col-lg-6 col-12">
                                     <a href="/">
                                         <Image src={site?.logo} width="75" justify="center" padding="3"/>
                                     </a>
                                 </div>
-                                <div className="col-6 p-0 d-flex justify-content-center align-items-center">
+                                <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center">
                                     <div className="d-flex justify-content-center align-items-center">
-                                        <a href="www.facebook.com" className="mx-4">
+                                        <a href="www.facebook.com" className="mx-lg-4 mx-2">
                                             <Icon name="facebook" fill="#fff" height="30" width="30" />
                                         </a>
-                                        <a href="www.twitter.com" className="mx-4">
+                                        <a href="www.twitter.com" className="mx-lg-4 mx-2">
                                             <Icon name="twitter" fill="#fff" height="30" width="30" />
                                         </a>
-                                        <a href="www.linkedin.com" className="mx-4">
+                                        <a href="www.linkedin.com" className="mx-lg-4 mx-2">
                                             <Icon name="linkedin" fill="#fff" height="30" width="30" />
                                         </a>
                                     </div>
@@ -110,7 +111,7 @@ const Footer = ({ site }) => {
                 </div>
                 <div className="container-fluid px-5">
                     <div className="row p-0">
-                        <div className="col-6 p-0">
+                        <div className="col-lg-6 col-12 p-0">
                             <div className="container">
                                 <div className="row p-0">
                                     <div className="col-12 p-0">
