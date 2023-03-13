@@ -7,6 +7,11 @@
     position: relative;
     margin-top: 250px;
 
+    @include media-breakpoint-down(lg) {
+        margin-top: 50px;
+        padding-top: 400px;
+    }
+
     .contact-panel {
         position: absolute;
         color: $sbs-primary-black !important;
@@ -16,6 +21,11 @@
         width: 40%;
         padding: 5%;
         box-shadow: 5px 21px 16px 0px rgba(0,0,0,0.75);
+
+        @include media-breakpoint-down(lg) {
+            width: 90%;
+            top: -50px;
+        }
 
         &__text {
             margin-bottom: 5rem;

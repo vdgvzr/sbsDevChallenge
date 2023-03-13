@@ -28,13 +28,13 @@ const Home = ({ page }) => {
             />
             <TextWithImagePanel
                 contentMain={page.contentMain}
-            /> */}
+            />
             <PartnerPanel
                 contentMain={page.contentMain}
-            />{/* 
+            /> */}
             <PromisePanel
                 contentMain={page.contentMain}
-            /> */}
+            />
         </>
     )
 }

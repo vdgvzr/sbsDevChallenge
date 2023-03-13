@@ -27,7 +27,7 @@ const PromisePanel = ({ contentMain }) => {
                     </div>
                     <div className="container">
                         <div className="row justify-content-end mb-4">
-                            <div className="col-6">
+                            <div className="col-lg-6 col-12">
                                 <div className="mb-5">
                                     <Heading heading={promisePanel.heading} />
                                 </div>
@@ -37,8 +37,8 @@ const PromisePanel = ({ contentMain }) => {
                         <div className="row mb-5 mt-5">
                             {[...Array(promisePanel.promises.length)].map((elem, i) => {
                                 return(
-                                    <div key={i} className="col-4 px-5 text-center">
-                                        <Image src={promisePanel.promises[i].promiseLogo} width="50" justify="center" pading="3" />
+                                    <div key={i} className="col-lg-4 col-12 px-lg-5 text-center">
+                                        <Image src={promisePanel.promises[i].promiseLogo} size="75px" justify="center" pading="3" />
                                         <h2 className="px-3">{promisePanel.promises[i].promiseHeading}</h2>
                                     </div>
                                 )
