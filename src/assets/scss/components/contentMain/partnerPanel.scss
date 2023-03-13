@@ -5,7 +5,20 @@
     position: relative;
 
     &__logo-container {
-        border-top: 1px solid $sbs-tonal-dark-blue;
-        border-bottom: 1px solid $sbs-tonal-dark-blue;
+        @include media-breakpoint-up(lg) {
+            border-top: 1px solid $sbs-tonal-dark-blue;
+            border-bottom: 1px solid $sbs-tonal-dark-blue;
+        }
+
+        @include media-breakpoint-down(lg) {
+            overflow: visible;
+            white-space: break-spaces;
+        }
+    }
+
+    &__mobile-divider {
+        @include media-breakpoint-down(lg) {
+            border-top: 1px solid $sbs-tonal-dark-blue;
+        }
     }
 }

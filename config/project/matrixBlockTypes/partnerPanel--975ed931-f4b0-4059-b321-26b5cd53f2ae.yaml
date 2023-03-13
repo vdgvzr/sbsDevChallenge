@@ -71,7 +71,7 @@ fields:
       defaultUploadLocationSubpath: null
       localizeRelations: false
       maintainHierarchy: false
-      maxRelations: 5
+      maxRelations: null
       minRelations: null
       previewMode: full
       restrictFiles: false

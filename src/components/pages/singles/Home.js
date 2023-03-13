@@ -25,13 +25,13 @@ const Home = ({ page }) => {
             />
             <CtaPanel
                 contentMain={page.contentMain}
-            /> */}
+            />
             <TextWithImagePanel
                 contentMain={page.contentMain}
-            />{/* 
+            /> */}
             <PartnerPanel
                 contentMain={page.contentMain}
-            />
+            />{/* 
             <PromisePanel
                 contentMain={page.contentMain}
             /> */}
