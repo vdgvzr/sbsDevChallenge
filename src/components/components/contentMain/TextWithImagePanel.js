@@ -9,16 +9,18 @@ const TextWithImagePanel = ({ contentMain }) => {
         <>
             <div className="text-with-image-panel">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-6 text-with-image-panel__image">
-                            <div className="h-100" style={{
+                    <div className="row  text-with-image-panel__row">
+                        <div className="col-lg-6 col-12 text-with-image-panel__image">
+                            <div className="h-lg-100" style={{
                                 backgroundImage: `url(${textWithImagePanel.image})`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',
-                                maxWidth: '75%'
+                                maxWidth: '100%',
+                                minHeight: '500px'
+
                             }}></div>
                         </div>
-                        <div className="col-6 text-with-image-panel__text pt-5">
+                        <div className="col-lg-6 col-12 text-with-image-panel__text pt-5 mb-lg-0 mb-5">
                             <div className="mb-5">
                                 <Heading heading={textWithImagePanel.heading} />
                             </div>

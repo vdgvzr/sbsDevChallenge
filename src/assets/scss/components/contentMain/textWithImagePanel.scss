@@ -3,7 +3,19 @@
 .text-with-image-panel {
     padding: 100px 0;
 
+    @include media-breakpoint-down(lg) {
+        padding: 50px 0;
+    }
+
+    &__row {
+        @include media-breakpoint-down(lg) {
+            flex-direction: column-reverse;
+        }
+    }
+
     &__text {
-        padding-right: 8% !important;
+        @include media-breakpoint-up(lg) {
+            padding-left: 8% !important;
+        }
     }
 }

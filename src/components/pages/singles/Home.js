@@ -22,13 +22,13 @@ const Home = ({ page }) => {
             />
             <TestimonialCarousel
                 contentMain={page.contentMain}
-            /> */}
+            />
             <CtaPanel
                 contentMain={page.contentMain}
-            />{/* 
+            /> */}
             <TextWithImagePanel
                 contentMain={page.contentMain}
-            />
+            />{/* 
             <PartnerPanel
                 contentMain={page.contentMain}
             />
