@@ -1,2 +1,27 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
+
+// Z Indexing
+.z-index-n2 {
+    z-index: -2;
+}
+
+.z-index-n1 {
+    z-index: -1;
+}
+
+.z-index-0 {
+    z-index: 0;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-master {
+    z-index: 1090;
+}

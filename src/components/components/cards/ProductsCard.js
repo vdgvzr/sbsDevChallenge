@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "../ui/Link"
+import LinkUrl from "../ui/Link"
 
 const ProductsCard = ({ product }) => {
     return(
@@ -16,7 +16,7 @@ const ProductsCard = ({ product }) => {
                     <h5 className="card-title">{product.productTitle}</h5>
                 </div>
                 <div className="container-fluid">
-                    <Link
+                    <LinkUrl
                         linkText="Explore"
                         url=""
                         theme="dark"

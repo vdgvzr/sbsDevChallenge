@@ -1,12 +1,16 @@
-import React, { useState, useCallback } from "react"
+import React, { useState, useCallback, useRef } from "react"
 import VerticalCta from "../ buttons/VerticalCta"
 import ProjectsPanelButton from "../ buttons/ProjectsPanelButton"
-import Link from "../ui/Link"
+import LinkUrl from "../ui/Link"
+import Icon from "../ui/Icon"
+import { handleZIndex } from "../../../assets/js/main"
 
 const HomepageHeader = ({ homepageHeader }) => {
     const headerContent = homepageHeader[0].headerContent
     const projectsPanel = homepageHeader[1].projectsPanel
     const contactCta = homepageHeader[2].contactCta
+
+    const dataAddZIndex = useRef([])
     
     const mod = (n, m) => ((n % m) + m) % m
     const projects = projectsPanel.projects
@@ -23,30 +27,45 @@ const HomepageHeader = ({ homepageHeader }) => {
         [setProject, projects]
     })
 
+    handleZIndex(dataAddZIndex.current)
+
     return(
         <>
             <div className="homepage-header" style={{
                 backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, ${headerContent.backgroundImageOpacity}), rgba(0, 0, 0, ${headerContent.backgroundImageOpacity})), url(${headerContent.backgroundImage})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
-            }}>
+                position: "relative",
+                overflow: "hidden"
+            }}> 
                 <VerticalCta
                     type="button"
                     buttonText={contactCta.cta}
                     url={contactCta.url}
+                    ref={(ref) => ref && dataAddZIndex.current.push(ref)}
+                />
+                <Icon 
+                    name="sbs" 
+                    stroke="#fff" 
+                    fill="none" 
+                    height="600px" 
+                    width="600px" 
+                    position="absolute"
+                    top="0"
+                    right="0"
                 />
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
                         <div className="col-12 p-0">
                             <div className="row">
-                                <div className="col-lg-8 col-12">
+                                <div className="col-lg-8 col-12" ref={(ref) => ref && dataAddZIndex.current.push(ref)}>
                                     <h1 className="homepage-header__heading h1-large mb-5">{headerContent.headerText}</h1>
                                     <p className="homepage-header__sub-heading">{headerContent.subHeader}</p>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12">
-                                    <div className="projects-panel d-flex h-100">
+                                    <div className="projects-panel d-flex h-100" ref={(ref) => ref && dataAddZIndex.current.push(ref)}>
                                         <div className="d-flex flex-column">
                                             <ProjectsPanelButton
                                                 icon="chevron-right"
@@ -74,7 +93,7 @@ const HomepageHeader = ({ homepageHeader }) => {
                                                     </div>
                                                 </div>
                                                 <div className="col-6 d-flex align-items-end">
-                                                    <Link
+                                                    <LinkUrl
                                                         linkText="Explore Project"
                                                         url={projects[project].url}
                                                         theme="light"

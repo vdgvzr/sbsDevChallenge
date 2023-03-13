@@ -1,6 +1,6 @@
 import React from "react"
 import Heading from "../ui/Heading"
-import Link from "../ui/Link"
+import LinkUrl from "../ui/Link"
 
 const TextWithImagePanel = ({ contentMain }) => {
     const textWithImagePanel = contentMain[4].textWithImagePanel
@@ -31,7 +31,7 @@ const TextWithImagePanel = ({ contentMain }) => {
                                     )
                                 })}
                             </div>
-                            <Link
+                            <LinkUrl
                                 linkText={textWithImagePanel.linkCta[0].linkText}
                                 url={textWithImagePanel.linkCta[0].linkUrl}
                                 theme="dark"

@@ -18,14 +18,14 @@ const Footer = ({ site }) => {
                                                 <p className="body-copy mb-5">Join our mailing list to get all the latest industry news.</p>
                                                 <form className="footer__email-form">
                                                     <div className="d-flex mb-4">
-                                                        <input className="default-input w-100" id="email" name="email" type="email" onChange="" value="" required placeholder="Enter your email address" autocomplete="off"/>
+                                                        <input className="default-input w-100" id="email" name="email" type="email" required placeholder="Enter your email address" autoComplete="off"/>
                                                         <button type="submit" className="footer__email-form-submit">
-                                                            <Icon name="chevron-right" color="#fff" height="20" width="20" />
+                                                            <Icon name="chevron-right" fill="#fff" height="20" width="20" />
                                                         </button>
                                                     </div> 
                                                     <div className="d-flex">
                                                         <input type="checkbox" id="consent" name="consent" value="consent" />
-                                                        <label id="consent-label" for="consent">I have read and agree to the privacy policy and consent to being sent email updates.</label>
+                                                        <label id="consent-label" htmlFor="consent">I have read and agree to the privacy policy and consent to being sent email updates.</label>
                                                     </div>
                                                 </form>
                                             </div>
@@ -94,13 +94,13 @@ const Footer = ({ site }) => {
                                 <div className="col-6 p-0 d-flex justify-content-center align-items-center">
                                     <div className="d-flex justify-content-center align-items-center">
                                         <a href="www.facebook.com" className="mx-4">
-                                            <Icon name="facebook" color="#fff" height="30" width="30" />
+                                            <Icon name="facebook" fill="#fff" height="30" width="30" />
                                         </a>
                                         <a href="www.twitter.com" className="mx-4">
-                                            <Icon name="twitter" color="#fff" height="30" width="30" />
+                                            <Icon name="twitter" fill="#fff" height="30" width="30" />
                                         </a>
                                         <a href="www.linkedin.com" className="mx-4">
-                                            <Icon name="linkedin" color="#fff" height="30" width="30" />
+                                            <Icon name="linkedin" fill="#fff" height="30" width="30" />
                                         </a>
                                     </div>
                                 </div>

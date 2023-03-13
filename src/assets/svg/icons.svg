@@ -12,11 +12,11 @@
     <symbol>
 
     <symbol id="icon-trapeze" viewBox="0 0 512 512">
-        <path d="M50 20  H 250 L 300 70 H 10 Z" stroke="#F98C3F" stroke-width="5" />
+        <path d="M58.62 2.888L2.483 21.598v168.413l56.137 18.715z" stroke-width="4"/>
     <symbol>
 
     <symbol id="icon-sbs" viewBox="0 0 512 512">
-        <polygon points="20 15,75 35,75 90, 20 110,3 100,3 25" stroke="#F98C3F" stroke-width="1" />
+        <path d="M81.133 2.438L2.58 28.62v418.945l78.552 26.185 235.656-78.551V80.989z" stroke-width="4"/>
     <symbol>
 
     <symbol id="icon-facebook" viewBox="0 0 512 512">

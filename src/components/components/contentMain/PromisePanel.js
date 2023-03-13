@@ -1,7 +1,7 @@
 import React from "react"
 import Heading from "../ui/Heading"
 import Button from "../ buttons/Button"
-import Link from "../ui/Link"
+import LinkUrl from "../ui/Link"
 import Image from "../ui/Image"
 
 const PromisePanel = ({ contentMain }) => {
@@ -17,7 +17,7 @@ const PromisePanel = ({ contentMain }) => {
                             <Heading heading={contactPanel.heading} />
                         </div>
                         <h3 className="contact-panel__text">{contactPanel.text}</h3>
-                        <Link
+                        <LinkUrl
                             linkText={contactPanel.linkCta[0].linkText}
                             url={contactPanel.linkCta[0].linkUrl}
                             theme="dark"
