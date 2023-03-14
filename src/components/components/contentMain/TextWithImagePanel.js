@@ -11,14 +11,7 @@ const TextWithImagePanel = ({ contentMain }) => {
                 <div className="container">
                     <div className="row  text-with-image-panel__row">
                         <div className="col-lg-6 col-12 text-with-image-panel__image">
-                            <div className="h-lg-100" style={{
-                                backgroundImage: `url(${textWithImagePanel.image})`,
-                                backgroundRepeat: 'no-repeat',
-                                backgroundSize: 'cover',
-                                maxWidth: '100%',
-                                minHeight: '500px'
-
-                            }}></div>
+                            <img src={textWithImagePanel.image} className="img-fluid"/>
                         </div>
                         <div className="col-lg-6 col-12 text-with-image-panel__text pt-5 mb-lg-0 mb-5">
                             <div className="mb-5">
