@@ -8,8 +8,9 @@
     color: $sbs-primary-black;
     background-color: $sbs-primary-orange;
     text-decoration: none;
-    transform-origin: left;
+    transform-origin: top left;
     transform: rotate(90deg);
+    transition: top 400ms ease-in-out;
 
     span {
         position: relative;

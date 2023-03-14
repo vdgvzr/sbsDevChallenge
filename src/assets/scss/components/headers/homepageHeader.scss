@@ -4,15 +4,10 @@
     background-color: $sbs-tonal-blue;
     color: $sbs-primary-white;
     height: 100%;
-    padding: 50px;
+    padding: 200px 0 50px;
+
     @include media-breakpoint-up(lg) {
         min-height: 100vh;
-    }
-
-    .vertical-cta {
-        position: absolute;
-        top: calc(-1 * (var(--vertical-cta-padding-x) * 2));
-        right: calc(-1 * (var(--vertical-cta-padding-y) * 3));
     }
 
     &__sub-heading {

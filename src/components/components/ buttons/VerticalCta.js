@@ -1,19 +1,18 @@
-import React from "react"
+import React, { forwardRef } from "react"
 
-const VerticalCta = ({ type, buttonText, url }) => {
-    return(
-        <>
-            <a
-                type={type}
-                className="vertical-cta z-index-2"
-                role={type}
-                href={url}
-                aria-label={buttonText}
-            >
-                <span>{buttonText}</span>
-            </a>
-        </>
-    )
-}
+const VerticalCta = forwardRef((props, ref) => (
+    <>
+        <a
+            type={props.type}
+            className="vertical-cta z-index-2"
+            role={props.type}
+            href={props.url}
+            aria-label={props.buttonText}
+            ref={ref}
+        >
+            <span>{props.buttonText}</span>
+        </a>
+    </>
+))
 
 export default VerticalCta

@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useEffect, useRef } from "react"
-import VerticalCta from "../ buttons/VerticalCta"
 import ProjectsPanelButton from "../ buttons/ProjectsPanelButton"
 import LinkUrl from "../ui/Link"
 import Icon from "../ui/Icon"
@@ -7,7 +6,6 @@ import Icon from "../ui/Icon"
 const HomepageHeader = ({ homepageHeader }) => {
     const headerContent = homepageHeader[0].headerContent
     const projectsPanel = homepageHeader[1].projectsPanel
-    const contactCta = homepageHeader[2].contactCta
     const headerContainer = useRef()
     const icons = useRef([])
     
@@ -71,13 +69,6 @@ const HomepageHeader = ({ homepageHeader }) => {
                 position: "relative",
                 overflow: "hidden"
             }} ref={headerContainer}>
-                <div className="d-none d-lg-block">
-                    <VerticalCta
-                        type="button"
-                        buttonText={contactCta.cta}
-                        url={contactCta.url}
-                    />
-                </div>
                 <div className="d-none d-lg-block">
                     <Icon 
                         name="sbs" 
