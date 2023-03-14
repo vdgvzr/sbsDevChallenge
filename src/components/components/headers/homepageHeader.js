@@ -127,7 +127,7 @@ const HomepageHeader = ({ homepageHeader }) => {
                 </div>
                 <div className="container h-100">
                     <div className="row align-items-center h-100">
-                        <div className="col-12 p-0">
+                        <div className="col-12">
                             <div className="row">
                                 <div className="col-lg-8 col-12 z-index-2">
                                     <h1 className="homepage-header__heading h1-default mb-5">{headerContent.headerText}</h1>

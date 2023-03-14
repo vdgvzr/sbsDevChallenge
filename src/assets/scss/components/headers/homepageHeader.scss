@@ -9,9 +9,15 @@
     position: relative;
     overflow: hidden;
     background-position: top;
-    background-size: 150%;
 
+    @include media-breakpoint-down(lg) {
+        background-size: cover !important;
+    }
+    
+    
+    
     @include media-breakpoint-up(lg) {
+        background-size: 150%;
         min-height: 100vh;
     }
 

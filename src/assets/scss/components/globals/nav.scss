@@ -25,6 +25,10 @@
         border-right: 1px solid $sbs-primary-white;
     }
 
+    .navbar-toggler {
+        border: none !important;
+    }
+
     &__search {
         width: 126px;
         display: flex;
@@ -34,11 +38,16 @@
         cursor: pointer;
         background-color: transparent;
         transition: background-color var(--default-transition);
-        margin-right: 52px;
         transition: margin-right 500ms ease-in-out;
 
+        @include media-breakpoint-up(lg) {
+            margin-right: 52px;
+        }
+
         &-scrolled {
-            margin-right: 0;
+            @include media-breakpoint-up(lg) {
+                margin-right: 0;
+            }
         }
 
         &:hover {
@@ -52,7 +61,9 @@
         right: -193px;
 
         &__scrolled {
-            top: -200%;
+            @include media-breakpoint-up(lg) {
+                top: -200%;
+            }
         }
     }
 

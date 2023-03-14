@@ -28,4 +28,29 @@
             margin-bottom: 0;
         }
     }
+
+    .carousel:after {
+        content: '';
+    }
+
+    .carousel:after {
+        @include media-breakpoint-up(lg) {
+            content: 'flickity';
+            display: none;
+        }
+    }
+
+    .flickity-enabled {
+        background-color: $sbs-primary-white;
+        overflow: hidden;
+    
+        &:focus-visible {
+            outline: none;
+        }
+
+        .flickity-viewport {
+            margin-top: 50px;
+            padding: 0 3rem;
+        }
+    }
 }
