@@ -8,6 +8,11 @@
     overflow: hidden;
     position: relative;
 
+    svg {
+        transform: translateX(0px) translateY(0px);
+        transition: transform var(--default-bezier);
+    }
+
     &__inner {
         padding: 75px 0;
         background-color: $sbs-tonal-dark-blue;

@@ -14,10 +14,9 @@
         background-size: cover !important;
     }
     
-    
-    
     @include media-breakpoint-up(lg) {
         background-size: 150%;
+        transition: background-size var(--default-bezier);
         min-height: 100vh;
     }
 
@@ -70,6 +69,6 @@
 
     svg {
         transform: 'translateX(0px) translateY(0px)';
-        transition: all 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+        transition: all var(--default-bezier);
     }
 }

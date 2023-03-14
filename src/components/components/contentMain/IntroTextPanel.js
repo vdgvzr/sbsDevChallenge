@@ -64,7 +64,6 @@ const IntroTextPanel = ({ contentMain }) => {
                             position="absolute"
                             top="-96%"
                             right="46%"
-                            rotate="180"
                             value="70"
                             ref={ref=>icons.current.push(ref)}
                         />
@@ -77,7 +76,6 @@ const IntroTextPanel = ({ contentMain }) => {
                             position="absolute"
                             top="-13%"
                             right="80%"
-                            rotate="180"
                             value="80"
                             ref={ref=>icons.current.push(ref)}
                         />
