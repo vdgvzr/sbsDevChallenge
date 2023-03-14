@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import Heading from '../ui/Heading'
 import Icon from '../ui/Icon'
+import { parallaxY } from "../../../assets/js/lib/handleParallax"
 
 const IntroTextPanel = ({ contentMain }) => {
     const introTextPanel = contentMain[0].introtextpanel
@@ -8,22 +9,7 @@ const IntroTextPanel = ({ contentMain }) => {
     const icons = useRef([])
 
     useEffect(() => {
-        window.addEventListener("scroll", parallaxY);
-
-        function parallaxY() {
-            icons.current.forEach(icon => {
-                window.requestAnimationFrame(() => {
-                    const bannerRect = banner.current.getBoundingClientRect()
-                    const position = icon.getAttribute("value");
-                    const scrollPos = window.scrollY
-                    const iconCenter = icon.clientWidth + (icon.clientHeight / 2)
-                    const offset = scrollPos - iconCenter
-                    const displacement = (10 + (offset / bannerRect.width * position) * 5).toFixed(6)
-        
-                    icon.style.transform = `translateY(${displacement}px)`;
-                })
-            })
-        }
+        window.addEventListener("scroll", parallaxY(banner.current, icons.current));
     }, [])
 
     return(

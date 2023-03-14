@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect, useRef } from "react"
 import ProjectsPanelButton from "../ buttons/ProjectsPanelButton"
 import LinkUrl from "../ui/Link"
 import Icon from "../ui/Icon"
+import { parallax, imageParallax } from "../../../assets/js/lib/handleParallax"
 
 const HomepageHeader = ({ homepageHeader }) => {
     const headerContent = homepageHeader[0].headerContent
@@ -25,49 +26,8 @@ const HomepageHeader = ({ homepageHeader }) => {
     })
 
     useEffect(() => {
-        headerContainer.current.addEventListener("mousemove", parallax);
-        window.addEventListener("scroll", parallaxY);
-
-        function parallaxY() {
-            window.requestAnimationFrame(() => {
-                const scrollPos = window.scrollY
-                const displacement = Math.abs((scrollPos / 40).toFixed(6)) + 150
-    
-                headerContainer.current.style.backgroundSize = `${displacement}%`;
-            })
-        }
-
-        function parallax(event) {
-            icons.current.forEach((icon) => {
-                window.requestAnimationFrame(() => {
-                    const headerRect = headerContainer.current.getBoundingClientRect()
-                    const iconRect = icon.getBoundingClientRect()
-                    const position = icon.getAttribute("value");
-        
-                    const mousePos = {
-                        'x': event.pageX,
-                        'y': event.pageY,
-                    }
-                    
-                    const iconCenter = {
-                        'x': iconRect.left + (iconRect.width / 2),
-                        'y': iconRect.top + (iconRect.height / 2),
-                    }
-
-                    const offset = {
-                        'x': mousePos.x - iconCenter.x,
-                        'y': mousePos.y - iconCenter.y,
-                    }
-
-                    const displacement = {
-                        'x': (100 + (offset.x / headerRect.width * position)).toFixed(6),
-                        'y': (100 + (offset.y / headerRect.height * position)).toFixed(6),
-                    }
-        
-                    icon.style.transform = `translateX(${displacement.x}px) translateY(${displacement.y}px)`;
-                })
-            })
-        }
+        headerContainer.current.addEventListener("mousemove", parallax(headerContainer.current, icons.current));
+        window.addEventListener("scroll", imageParallax(headerContainer.current));
     }, [])
 
     return(

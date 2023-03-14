@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react"
 import Heading from '../ui/Heading'
 import Button from "../ buttons/Button"
 import Icon from '../ui/Icon'
+import { parallaxY } from "../../../assets/js/lib/handleParallax"
 
 const CtaPanel = ({ contentMain }) => {
     const ctaPanel = contentMain[3].ctaPanel
@@ -9,22 +10,7 @@ const CtaPanel = ({ contentMain }) => {
     const icons = useRef([])
 
     useEffect(() => {
-        window.addEventListener("scroll", parallaxY);
-
-        function parallaxY() {
-            icons.current.forEach(icon => {
-                window.requestAnimationFrame(() => {
-                    const bannerRect = banner.current.getBoundingClientRect()
-                    const position = icon.getAttribute("value")
-                    const scrollPos = window.scrollY
-                    const iconCenter = icon.clientWidth + (icon.clientHeight / 2)
-                    const offset = scrollPos - iconCenter
-                    const displacement = (10 + (offset / bannerRect.width * position) * 5).toFixed(6)
-        
-                    icon.style.transform = `translateY(${displacement}px)`;
-                })
-            })
-        }
+        window.addEventListener("scroll", parallaxY(banner.current, icons.current));
     }, [])
 
     return(
