@@ -16,22 +16,10 @@
 
     &__carousel {
         display: flex;
-        animation: scroll 40s linear infinite;
-        border-top: 1px solid $sbs-tonal-darker-blue;
-        border-bottom: 1px solid $sbs-tonal-darker-blue;
 
         &-item {
             width: 175px !important;
             cursor: pointer;
-            transition: width 100ms ease-in-out;
-
-            &:hover {
-                width: 187.5px !important;
-            }
-        }
-
-        &:hover {
-            animation-play-state: paused;
         }
         
 
@@ -40,13 +28,15 @@
             white-space: break-spaces;
         }
     }
-}
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-175px * 5))
+    .flickity-enabled {
+        &:focus-visible {
+            outline: none;
+        }
+
+        .flickity-viewport {
+            border-top: 1px solid $sbs-tonal-darker-blue;
+            border-bottom: 1px solid $sbs-tonal-darker-blue;
+        }
     }
 }
