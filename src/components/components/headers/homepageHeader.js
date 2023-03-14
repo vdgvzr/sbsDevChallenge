@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from "react"
+import React, { useState, useCallback, useEffect, useRef } from "react"
 import VerticalCta from "../ buttons/VerticalCta"
 import ProjectsPanelButton from "../ buttons/ProjectsPanelButton"
 import LinkUrl from "../ui/Link"
@@ -8,8 +8,8 @@ const HomepageHeader = ({ homepageHeader }) => {
     const headerContent = homepageHeader[0].headerContent
     const projectsPanel = homepageHeader[1].projectsPanel
     const contactCta = homepageHeader[2].contactCta
-
-    const dataAddZIndex = useRef([])
+    const headerContainer = useRef()
+    const icons = useRef([])
     
     const mod = (n, m) => ((n % m) + m) % m
     const projects = projectsPanel.projects
@@ -26,6 +26,42 @@ const HomepageHeader = ({ homepageHeader }) => {
         [setProject, projects]
     })
 
+    useEffect(() => {
+        headerContainer.current.addEventListener("mousemove", parallax);
+
+        function parallax(event) {
+            icons.current.forEach((icon) => {
+                window.requestAnimationFrame(() => {
+                    const headerRect = headerContainer.current.getBoundingClientRect()
+                    const iconRect = icon.getBoundingClientRect()
+                    const position = icon.getAttribute("value");
+        
+                    const mousePos = {
+                        'x': event.pageX,
+                        'y': event.pageY,
+                    }
+                    
+                    const iconCenter = {
+                        'x': iconRect.left + (iconRect.width / 2),
+                        'y': iconRect.top + (iconRect.height / 2),
+                    }
+
+                    const offset = {
+                        'x': mousePos.x - iconCenter.x,
+                        'y': mousePos.y - iconCenter.y,
+                    }
+
+                    const displacement = {
+                        'x': (100 + (offset.x / headerRect.width * position)).toFixed(6),
+                        'y': (100 + (offset.y / headerRect.height * position)).toFixed(6),
+                    }
+        
+                    icon.style.transform = `translateX(${displacement.x}px) translateY(${displacement.y}px)`;
+                })
+            })
+        }
+    }, [])
+
     return(
         <>
             <div className="homepage-header" style={{
@@ -34,7 +70,7 @@ const HomepageHeader = ({ homepageHeader }) => {
                 backgroundSize: 'cover',
                 position: "relative",
                 overflow: "hidden"
-            }}>
+            }} ref={headerContainer}>
                 <div className="d-none d-lg-block">
                     <VerticalCta
                         type="button"
@@ -52,6 +88,8 @@ const HomepageHeader = ({ homepageHeader }) => {
                         position="absolute"
                         top="35%"
                         right="-30%"
+                        value="-15"
+                        ref={ref=>icons.current.push(ref)}
                     />
                     <Icon 
                         name="sbs" 
@@ -62,6 +100,8 @@ const HomepageHeader = ({ homepageHeader }) => {
                         position="absolute"
                         top="55%"
                         right="-3%"
+                        value="5"
+                        ref={ref=>icons.current.push(ref)}
                     />
                     <Icon 
                         name="sbs" 
@@ -71,7 +111,9 @@ const HomepageHeader = ({ homepageHeader }) => {
                         width="25vw" 
                         position="absolute"
                         top="40%"
-                        right="15%"
+                        right="10%"
+                        value="30"
+                        ref={ref=>icons.current.push(ref)}
                     />
                     <Icon 
                         name="sbs" 
@@ -82,7 +124,8 @@ const HomepageHeader = ({ homepageHeader }) => {
                         position="absolute"
                         top="55%"
                         right="-3%"
-                        rotate="180"
+                        value="-5"
+                        ref={ref=>icons.current.push(ref)}
                     />
                 </div>
                 <div className="container h-100">

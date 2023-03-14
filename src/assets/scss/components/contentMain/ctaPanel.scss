@@ -4,7 +4,7 @@
     padding: 100px 0;
     background-color: $sbs-primary-dark-blue;
     color: $sbs-primary-white;
-    transition: all 100ms ease-in-out;
+    transition: all var(--default-transition);
     overflow: hidden;
     position: relative;
 

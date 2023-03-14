@@ -1,14 +1,35 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import Heading from '../ui/Heading'
 import Button from "../ buttons/Button"
 import Icon from '../ui/Icon'
 
 const CtaPanel = ({ contentMain }) => {
     const ctaPanel = contentMain[3].ctaPanel
+    const banner = useRef()
+    const icons = useRef([])
+
+    useEffect(() => {
+        window.addEventListener("scroll", parallaxY);
+
+        function parallaxY() {
+            icons.current.forEach(icon => {
+                window.requestAnimationFrame(() => {
+                    const bannerRect = banner.current.getBoundingClientRect()
+                    const position = icon.getAttribute("value")
+                    const scrollPos = window.scrollY
+                    const iconCenter = icon.clientWidth + (icon.clientHeight / 2)
+                    const offset = scrollPos - iconCenter
+                    const displacement = (10 + (offset / bannerRect.width * position) * 5).toFixed(6)
+        
+                    icon.style.transform = `translateY(${displacement}px)`;
+                })
+            })
+        }
+    }, [])
 
     return(
         <>
-            <div className="cta-panel">
+            <div className="cta-panel" ref={banner}>
                 <div className="d-none d-lg-block">
                     <Icon 
                         name="trapeze" 
@@ -17,9 +38,11 @@ const CtaPanel = ({ contentMain }) => {
                         height="500px" 
                         width="500px" 
                         position="absolute"
-                        top="46%"
+                        top="40%"
                         left="15%"
                         zIndex="1"
+                        value="5"
+                        ref={ref=>icons.current.push(ref)}
                     />
                     <Icon 
                         name="trapeze" 
@@ -28,42 +51,38 @@ const CtaPanel = ({ contentMain }) => {
                         height="500px" 
                         width="500px" 
                         position="absolute"
-                        top="11%"
+                        top="-8%"
                         right="-14%"
                         zIndex="1"
+                        value="10"
+                        ref={ref=>icons.current.push(ref)}
                     />
                 </div>
                 <div className="container-fluid p-0">
-                    <div className="container cta-panel__inner">
+                    <div className="container cta-panel__inner" ref={banner}>
                         <Icon 
                             name="trapeze" 
                             stroke="#EC6608" 
-                            fill="none" 
-                            height="500px" 
-                            width="500px" 
-                            position="absolute"
-                            top="-12%"
-                            left="5%"
-                        />
-                        <Icon 
-                            name="trapeze" 
-                            stroke="#EC6608" 
-                            fill="none" 
-                            height="500px" 
-                            width="500px" 
-                            position="absolute"
-                            top="55%"
-                            right="-28%"
-                        />
-                        <Icon 
-                            name="sbs" 
-                            stroke="rgba(236,102,8,0.5)" 
                             fill="none" 
                             height="500px" 
                             width="500px" 
                             position="absolute"
                             top="-70%"
-                            left="-10%"
+                            left="5%"
+                            value="15"
+                            ref={ref=>icons.current.push(ref)}
+                        />
+                        <Icon 
+                            name="trapeze" 
+                            stroke="#EC6608" 
+                            fill="none" 
+                            height="500px" 
+                            width="500px" 
+                            position="absolute"
+                            top="8%"
+                            right="-28%"
+                            value="20"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="sbs" 
@@ -72,8 +91,22 @@ const CtaPanel = ({ contentMain }) => {
                             height="500px" 
                             width="500px" 
                             position="absolute"
-                            top="12%"
+                            top="-120%"
+                            left="-10%"
+                            value="25"
+                            ref={ref=>icons.current.push(ref)}
+                        />
+                        <Icon 
+                            name="sbs" 
+                            stroke="rgba(236,102,8,0.5)" 
+                            fill="none" 
+                            height="500px" 
+                            width="500px" 
+                            position="absolute"
+                            top="-52%"
                             right="-22%"
+                            value="30"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="sbs" 
@@ -82,9 +115,11 @@ const CtaPanel = ({ contentMain }) => {
                             height="300px" 
                             width="300px" 
                             position="absolute"
-                            top="21%"
-                            left="-15%"
+                            top="-200%"
+                            left="-78%"
                             rotate="180"
+                            value="35"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="sbs" 
@@ -93,9 +128,11 @@ const CtaPanel = ({ contentMain }) => {
                             height="300px" 
                             width="300px" 
                             position="absolute"
-                            top="58%"
-                            right="8%"
+                            top="-55%"
+                            right="0%"
                             rotate="180"
+                            value="40"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <div className="row mb-5 z-index-2">
                             <div className="col-12 text-center">

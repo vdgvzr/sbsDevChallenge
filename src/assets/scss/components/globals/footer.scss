@@ -37,7 +37,7 @@
             width: 100px;
             background-color: transparent;
             border-left: 0 !important;
-            transition: background-color 100ms ease-in-out;
+            transition: background-color var(--default-transition);
 
             &:hover {
                 background-color: $sbs-tonal-blue;
@@ -62,7 +62,7 @@
             a {
                 text-decoration: none;
                 color: $sbs-primary-white;
-                transition: color 100ms ease-in-out;
+                transition: color var(--default-transition);
 
                 h3 {
                     margin-bottom: 26px;

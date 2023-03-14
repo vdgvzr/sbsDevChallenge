@@ -1,12 +1,34 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import Heading from '../ui/Heading'
 import Icon from '../ui/Icon'
 
 const IntroTextPanel = ({ contentMain }) => {
     const introTextPanel = contentMain[0].introtextpanel
+    const banner = useRef()
+    const icons = useRef([])
+
+    useEffect(() => {
+        window.addEventListener("scroll", parallaxY);
+
+        function parallaxY() {
+            icons.current.forEach(icon => {
+                window.requestAnimationFrame(() => {
+                    const bannerRect = banner.current.getBoundingClientRect()
+                    const position = icon.getAttribute("value");
+                    const scrollPos = window.scrollY
+                    const iconCenter = icon.clientWidth + (icon.clientHeight / 2)
+                    const offset = scrollPos - iconCenter
+                    const displacement = (10 + (offset / bannerRect.width * position) * 5).toFixed(6)
+        
+                    icon.style.transform = `translateY(${displacement}px)`;
+                })
+            })
+        }
+    }, [])
+
     return(
         <>
-            <div className="intro-text-panel">
+            <div className="intro-text-panel" ref={banner}>
                 <div className="intro-text-panel__banner">
                     <div className="intro-text-panel__banner-inner">
                         <Icon 
@@ -16,8 +38,10 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="800px" 
                             width="800px" 
                             position="absolute"
-                            top="-120%"
+                            top="-170%"
                             right="62%"
+                            value="50"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="sbs" 
@@ -26,8 +50,10 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="300px" 
                             width="300px" 
                             position="absolute"
-                            top="56%"
-                            right="38%"
+                            top="32%"
+                            right="43%"
+                            value="60"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="sbs" 
@@ -36,9 +62,11 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="400px" 
                             width="400px" 
                             position="absolute"
-                            top="-48%"
-                            right="57%"
+                            top="-96%"
+                            right="46%"
                             rotate="180"
+                            value="70"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="sbs" 
@@ -47,9 +75,11 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="200px" 
                             width="200px" 
                             position="absolute"
-                            top="40%"
-                            right="82%"
+                            top="-13%"
+                            right="80%"
                             rotate="180"
+                            value="80"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="sbs" 
@@ -58,8 +88,10 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="400px" 
                             width="400px" 
                             position="absolute"
-                            top="35%"
-                            right="35%"
+                            top="5%"
+                            right="38%"
+                            value="90"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="trapeze" 
@@ -68,8 +100,10 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="400px" 
                             width="400px" 
                             position="absolute"
-                            top="-8%"
+                            top="-50%"
                             right="51%"
+                            value="100"
+                            ref={ref=>icons.current.push(ref)}
                         />
                         <Icon 
                             name="trapeze" 
@@ -78,15 +112,17 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="600px" 
                             width="600px" 
                             position="absolute"
-                            top="35%"
-                            right="30%"
+                            top="12%"
+                            right="32%"
+                            value="110"
+                            ref={ref=>icons.current.push(ref)}
                         />
                     </div>
                 </div>
                 <div className="intro-text-panel__panel"></div>
                 <div className="container h-100">
                     <div className="row align-items-center justify-content-end h-100">
-                        <div className="col-lg-6 col-10 p-5">
+                        <div className="col-lg-6 col-10 p-5 intro-text-panel__panel-text">
                             <Heading heading={introTextPanel.introText} />
                             <p className="body-copy">{introTextPanel.subHeader}</p>
                         </div>

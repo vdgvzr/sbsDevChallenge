@@ -1,7 +1,7 @@
 // Testimonial Card
 
 .testimonial-card {
-    transition: all 100ms ease-in-out;
+    transition: all var(--default-transition);
     border-radius: 0 !important;
     border: none !important;
 

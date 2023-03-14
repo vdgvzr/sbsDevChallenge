@@ -8,6 +8,7 @@
     justify-content: center;
     background-color: transparent;
     border: none;
+    transition: background-color var(--default-transition);
 
     @include media-breakpoint-up(lg) {
         border-right: 1px solid $sbs-primary-white;
