@@ -26,6 +26,16 @@ const HomepageHeader = ({ homepageHeader }) => {
 
     useEffect(() => {
         headerContainer.current.addEventListener("mousemove", parallax);
+        window.addEventListener("scroll", parallaxY);
+
+        function parallaxY() {
+            window.requestAnimationFrame(() => {
+                const scrollPos = window.scrollY
+                const displacement = Math.abs((scrollPos / 40).toFixed(6)) + 150
+    
+                headerContainer.current.style.backgroundSize = `${displacement}%`;
+            })
+        }
 
         function parallax(event) {
             icons.current.forEach((icon) => {
@@ -63,11 +73,7 @@ const HomepageHeader = ({ homepageHeader }) => {
     return(
         <>
             <div className="homepage-header" style={{
-                backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, ${headerContent.backgroundImageOpacity}), rgba(0, 0, 0, ${headerContent.backgroundImageOpacity})), url(${headerContent.backgroundImage})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-                position: "relative",
-                overflow: "hidden"
+                backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, ${headerContent.backgroundImageOpacity}), rgba(0, 0, 0, ${headerContent.backgroundImageOpacity})), url(${headerContent.backgroundImage})`
             }} ref={headerContainer}>
                 <div className="d-none d-lg-block">
                     <Icon 
