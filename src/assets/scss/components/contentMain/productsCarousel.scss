@@ -27,4 +27,18 @@
             border-left: 1px solid $sbs-primary-dark-blue;
         }
     }
+
+    .flickity-enabled {
+        &:focus-visible {
+            outline: none;
+        }
+
+        .flickity-viewport {
+            margin-top: 50px;
+        }
+    
+        .flickity-page-dots {
+            display: none;
+        }
+    }
 }
