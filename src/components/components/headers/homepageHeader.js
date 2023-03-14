@@ -26,8 +26,12 @@ const HomepageHeader = ({ homepageHeader }) => {
     })
 
     useEffect(() => {
-        headerContainer.current.addEventListener("mousemove", parallax(headerContainer.current, icons.current));
-        window.addEventListener("scroll", imageParallax(headerContainer.current));
+        async function onLoad() {
+            headerContainer.current.addEventListener("mousemove", parallax(headerContainer.current, icons.current));
+            window.addEventListener("scroll", imageParallax(headerContainer.current));
+        }
+
+        onLoad()
     }, [])
 
     return(

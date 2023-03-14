@@ -9,7 +9,11 @@ const IntroTextPanel = ({ contentMain }) => {
     const icons = useRef([])
 
     useEffect(() => {
-        window.addEventListener("scroll", parallaxY(banner.current, icons.current));
+        async function onLoad() {
+            window.addEventListener("scroll", parallaxY(banner.current, icons.current));
+        }
+
+        onLoad()
     }, [])
 
     return(
