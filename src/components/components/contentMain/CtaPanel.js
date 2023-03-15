@@ -14,7 +14,9 @@ const CtaPanel = ({ contentMain }) => {
             window.addEventListener("scroll", parallaxY(banner.current, icons.current));
         }
 
-        onLoad()
+        setTimeout(() => {
+            onLoad()
+        }, [1000])
     }, [])
 
     return(
@@ -125,12 +127,12 @@ const CtaPanel = ({ contentMain }) => {
                             ref={ref=>icons.current.push(ref)}
                         />
                         <div className="row mb-5 z-index-2">
-                            <div className="col-12 text-center">
+                            <div className="col-12 text-center js-fade" data-js-fade>
                                 <Heading heading={ctaPanel.heading} />
                             </div>
                         </div>
                         <div className="row z-index-2">
-                            <div className="col-12 text-center">
+                            <div className="col-12 text-center js-fade" data-js-fade>
                                 <Button
                                     type="button"
                                     buttonText={ctaPanel.button[0].buttonText}

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Layout from './components/layouts/Layout'
 import Page from './components/pages/Page'
+import { handleIntersectionObserver } from './assets/js/lib/handleIntersectionObserver'
 
 export default class App extends Component {
     constructor(props) {
@@ -19,7 +20,6 @@ export default class App extends Component {
     componentDidMount() {
         /* Get site globals */
         axios.get("/site.json").then((response) => {
-            console.log(response.data);
             const site = response.data;
             this.setState({ site });
         }).catch((error) => {
@@ -28,12 +28,16 @@ export default class App extends Component {
 
         /* Get singles */
         axios.get(this.path + '.json' + this.query).then((response) => {
-            console.log(response.data);
             const page = response.data;
             this.setState({ page });
         }).catch((error) => {
             console.error(error.message);
         });
+
+        setTimeout(() => {
+            // handleScroll()
+            handleIntersectionObserver()
+        }, [1000])
     }
 
     render() {

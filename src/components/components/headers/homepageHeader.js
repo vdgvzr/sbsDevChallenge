@@ -31,7 +31,9 @@ const HomepageHeader = ({ homepageHeader }) => {
             window.addEventListener("scroll", imageParallax(headerContainer.current));
         }
 
-        onLoad()
+        setTimeout(() => {
+            onLoad()
+        }, [1000])
     }, [])
 
     return(

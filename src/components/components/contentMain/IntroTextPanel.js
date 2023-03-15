@@ -13,7 +13,9 @@ const IntroTextPanel = ({ contentMain }) => {
             window.addEventListener("scroll", parallaxY(banner.current, icons.current));
         }
 
-        onLoad()
+        setTimeout(() => {
+            onLoad()
+        }, [1000])
     }, [])
 
     return(
@@ -107,10 +109,10 @@ const IntroTextPanel = ({ contentMain }) => {
                         />
                     </div>
                 </div>
-                <div className="intro-text-panel__panel"></div>
+                <div className="intro-text-panel__panel js-right" data-js-right></div>
                 <div className="container h-100">
                     <div className="row align-items-center justify-content-end h-100">
-                        <div className="col-lg-6 col-10 p-5 intro-text-panel__panel-text">
+                        <div className="col-lg-6 col-10 p-5 intro-text-panel__panel-text js-fade" data-js-fade>
                             <Heading heading={introTextPanel.introText} />
                             <p className="body-copy">{introTextPanel.subHeader}</p>
                         </div>

@@ -11,28 +11,30 @@ const TextWithImagePanel = ({ contentMain }) => {
                 <div className="container">
                     <div className="row  text-with-image-panel__row">
                         <div className="col-lg-6 col-12 text-with-image-panel__image d-flex align-items-center">
-                            <img src={textWithImagePanel.image} className="img-fluid"/>
+                            <img src={textWithImagePanel.image} className="img-fluid" data-js-fade/>
                         </div>
                         <div className="col-lg-6 col-12 text-with-image-panel__text pt-5 mb-lg-0 mb-5">
-                            <div className="mb-5">
+                            <div className="mb-5 js-fade" data-js-fade>
                                 <Heading heading={textWithImagePanel.heading} />
                             </div>
                             <div className="mb-5">
                                 {[...Array(textWithImagePanel.text.length)].map((elem, i) => {
                                     return(
-                                        <p key={i} className="body-copy">
+                                        <p key={i} className="body-copy js-fade" data-js-fade>
                                             {textWithImagePanel.text[i].redactor}
                                         </p>
                                     )
                                 })}
                             </div>
-                            <LinkUrl
-                                linkText={textWithImagePanel.linkCta[0].linkText}
-                                url={textWithImagePanel.linkCta[0].linkUrl}
-                                theme="dark"
-                                icon="chevron-right"
-                                justify="start"
-                            />
+                            <div className="js-fade" data-js-fade>
+                                <LinkUrl
+                                    linkText={textWithImagePanel.linkCta[0].linkText}
+                                    url={textWithImagePanel.linkCta[0].linkUrl}
+                                    theme="dark"
+                                    icon="chevron-right"
+                                    justify="start"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
