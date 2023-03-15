@@ -2,7 +2,7 @@
 
 ## Details
 
-* **Framework used** * CraftCMS 3
+* **Framework used** * CraftCMS
 * **Front end framework used** * React Js
 
 
