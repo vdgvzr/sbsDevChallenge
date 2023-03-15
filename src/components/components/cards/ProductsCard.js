@@ -12,7 +12,7 @@ const ProductsCard = ({ product }) => {
                     width: '100%',
                 }}></div>
                 <div className="card-body pb-3">
-                    <h5 className="card-title">{product.productTitle}</h5>
+                    <h1 className="card-title">{product.productTitle}</h1>
                 </div>
                 <div className="container-fluid">
                     <LinkUrl

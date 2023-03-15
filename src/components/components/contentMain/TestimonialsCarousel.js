@@ -54,7 +54,7 @@ const TestimonialCarousel = ({ contentMain }) => {
                         {testimonialCarousel.testimonials.map((testimonial, i) => {
                             return(
                                 <div key={i} className="col-lg-4 col-12">
-                                    <TestimonialCard testimonial={testimonial}/>
+                                    <TestimonialCard testimonial={testimonial} index={i}/>
                                 </div>
                             )
                         })}

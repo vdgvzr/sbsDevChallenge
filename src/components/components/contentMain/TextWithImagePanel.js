@@ -11,7 +11,7 @@ const TextWithImagePanel = ({ contentMain }) => {
                 <div className="container">
                     <div className="row  text-with-image-panel__row">
                         <div className="col-lg-6 col-12 text-with-image-panel__image d-flex align-items-center">
-                            <img src={textWithImagePanel.image} className="img-fluid" data-js-fade/>
+                            <img src={textWithImagePanel.image} className="img-fluid" data-js-fade alt="Services image"/>
                         </div>
                         <div className="col-lg-6 col-12 text-with-image-panel__text pt-5 mb-lg-0 mb-5">
                             <div className="mb-5 js-fade" data-js-fade>

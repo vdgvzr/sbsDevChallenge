@@ -19,8 +19,9 @@ const Footer = ({ site }) => {
                                                 <p className="body-copy mb-5">Join our mailing list to get all the latest industry news.</p>
                                                 <form className="footer__email-form">
                                                     <div className="d-flex mb-4">
+                                                        <label htmlFor="email" className="d-none">email</label>
                                                         <input className="default-input w-100" id="email" name="email" type="email" required placeholder="Enter your email address" autoComplete="off"/>
-                                                        <button type="submit" className="footer__email-form-submit">
+                                                        <button type="submit" className="footer__email-form-submit" aria-label="submit">
                                                             <Icon name="chevron-right" fill="#fff" height="20" width="20" />
                                                         </button>
                                                     </div> 
@@ -89,18 +90,18 @@ const Footer = ({ site }) => {
                             <div className="row py-lg-0 py-4">
                                 <div className="col-lg-6 col-12">
                                     <a href="/">
-                                        <Image src={site?.logo} width="75" justify="center" padding="3"/>
+                                        <Image src={site?.logo} width="75" justify="center" padding="3" alt="Site logo"/>
                                     </a>
                                 </div>
                                 <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center">
                                     <div className="d-flex justify-content-center align-items-center">
-                                        <a href="www.facebook.com" className="mx-lg-4 mx-2">
+                                        <a href="www.facebook.com" className="mx-lg-4 mx-2" aria-label="facebook">
                                             <Icon name="facebook" fill="#fff" height="30" width="30" />
                                         </a>
-                                        <a href="www.twitter.com" className="mx-lg-4 mx-2">
+                                        <a href="www.twitter.com" className="mx-lg-4 mx-2" aria-label="twitter">
                                             <Icon name="twitter" fill="#fff" height="30" width="30" />
                                         </a>
-                                        <a href="www.linkedin.com" className="mx-lg-4 mx-2">
+                                        <a href="www.linkedin.com" className="mx-lg-4 mx-2" aria-label="linkedin">
                                             <Icon name="linkedin" fill="#fff" height="30" width="30" />
                                         </a>
                                     </div>

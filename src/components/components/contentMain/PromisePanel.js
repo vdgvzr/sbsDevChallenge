@@ -38,7 +38,7 @@ const PromisePanel = ({ contentMain }) => {
                             {[...Array(promisePanel.promises.length)].map((elem, i) => {
                                 return(
                                     <div key={i} className="col-lg-4 col-12 px-lg-5 text-center js-fade" data-js-fade>
-                                        <Image src={promisePanel.promises[i].promiseLogo} size="75px" justify="center" pading="3" />
+                                        <Image src={promisePanel.promises[i].promiseLogo} size="75px" justify="center" alt={`promise logo ${i}`} />
                                         <h2 className="px-3">{promisePanel.promises[i].promiseHeading}</h2>
                                     </div>
                                 )

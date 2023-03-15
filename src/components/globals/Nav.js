@@ -35,7 +35,7 @@ const Nav = ({ site }) => {
             <nav className="navbar navbar-expand-lg navbar-dark z-index-master" ref={navbar}>
                 <div className="navbar__inner">
                     <a className="navbar-brand" href="/">
-                        <Image src={site?.logo} width="50" justify="center"/>
+                        <Image src={site?.logo} width="50" justify="center" alt="Site logo"/>
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
