@@ -30,8 +30,8 @@ const CtaPanel = ({ contentMain }) => {
                         height="500px" 
                         width="500px" 
                         position="absolute"
-                        top="40%"
-                        left="15%"
+                        top="5%"
+                        left="80%"
                         zIndex="1"
                         value="5"
                         ref={ref=>icons.current.push(ref)}
@@ -43,8 +43,8 @@ const CtaPanel = ({ contentMain }) => {
                         height="500px" 
                         width="500px" 
                         position="absolute"
-                        top="-8%"
-                        right="-14%"
+                        top="35%"
+                        left="14%"
                         zIndex="1"
                         value="10"
                         ref={ref=>icons.current.push(ref)}
@@ -59,8 +59,8 @@ const CtaPanel = ({ contentMain }) => {
                             height="500px" 
                             width="500px" 
                             position="absolute"
-                            top="-70%"
-                            left="5%"
+                            bottom="20%"
+                            left="3%"
                             value="15"
                             ref={ref=>icons.current.push(ref)}
                         />
@@ -71,8 +71,8 @@ const CtaPanel = ({ contentMain }) => {
                             height="500px" 
                             width="500px" 
                             position="absolute"
-                            top="8%"
-                            right="-28%"
+                            top="0%"
+                            left="90%"
                             value="20"
                             ref={ref=>icons.current.push(ref)}
                         />
@@ -83,8 +83,8 @@ const CtaPanel = ({ contentMain }) => {
                             height="500px" 
                             width="500px" 
                             position="absolute"
-                            top="-120%"
-                            left="-10%"
+                            bottom="110%"
+                            right="67%"
                             value="25"
                             ref={ref=>icons.current.push(ref)}
                         />
@@ -95,8 +95,8 @@ const CtaPanel = ({ contentMain }) => {
                             height="500px" 
                             width="500px" 
                             position="absolute"
-                            top="-52%"
-                            right="-22%"
+                            bottom="52%"
+                            left="22%"
                             value="30"
                             ref={ref=>icons.current.push(ref)}
                         />
@@ -107,8 +107,8 @@ const CtaPanel = ({ contentMain }) => {
                             height="300px" 
                             width="300px" 
                             position="absolute"
-                            top="-200%"
-                            left="-78%"
+                            bottom="110%"
+                            right="78%"
                             rotate="180"
                             value="35"
                             ref={ref=>icons.current.push(ref)}
@@ -120,7 +120,7 @@ const CtaPanel = ({ contentMain }) => {
                             height="300px" 
                             width="300px" 
                             position="absolute"
-                            top="-55%"
+                            bottom="150%"
                             right="0%"
                             rotate="180"
                             value="40"

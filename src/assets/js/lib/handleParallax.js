@@ -1,10 +1,17 @@
 export function parallax(container, icons) {
     return function executeOnEvent (event) {
-        icons.forEach((icon) => {
+        icons.forEach((icon, i) => {
             window.requestAnimationFrame(() => {
+                if (i % 2 === 0) {
+                    i = i * 10
+                } else if (i % 2 === 1) {
+                    i = (i - 10) * 10
+                } else if (i === 0) {
+                    i = i + 10
+                }
                 const headerRect = container.getBoundingClientRect()
                 const iconRect = icon.getBoundingClientRect()
-                const position = icon.getAttribute("value");
+                const position = i;
 
                 const mousePos = {
                     'x': event.pageX,
@@ -47,10 +54,10 @@ export function imageParallax(container) {
 export function parallaxY(container, icons) {
     return function executeOnEvent (e) {
         e.preventDefault()
-        icons.forEach(icon => {
+        icons.forEach((icon, i) => {
             window.requestAnimationFrame(() => {
                 const bannerRect = container.getBoundingClientRect()
-                const position = icon.getAttribute("value");
+                const position = i * 10;
                 const scrollPos = window.scrollY
                 const iconCenter = icon.clientWidth + (icon.clientHeight / 2)
                 const offset = scrollPos - iconCenter

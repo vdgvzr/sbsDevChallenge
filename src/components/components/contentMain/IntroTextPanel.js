@@ -30,7 +30,7 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="800px" 
                             width="800px" 
                             position="absolute"
-                            top="-170%"
+                            top="-120%"
                             right="62%"
                             value="50"
                             ref={ref=>icons.current.push(ref)}
@@ -54,7 +54,7 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="400px" 
                             width="400px" 
                             position="absolute"
-                            top="-96%"
+                            top="-60%"
                             right="46%"
                             value="70"
                             ref={ref=>icons.current.push(ref)}
@@ -66,7 +66,7 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="200px" 
                             width="200px" 
                             position="absolute"
-                            top="-13%"
+                            top="15%"
                             right="80%"
                             value="80"
                             ref={ref=>icons.current.push(ref)}

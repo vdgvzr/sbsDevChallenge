@@ -22,11 +22,10 @@
 ## Development Process
 
 1. Clone the repository at [https://github.com/vdgvzr/sbsDevChallenge]
-2. Check node version with `nvm use`.
-3. Run `npm i` to install front end library files.
-4. Run `composer install`.
-5. Create a `./.env` file. (Example in root). Fill in environment, database etc. details.
-6. Point a web server at `./web`.
+2. Run `npm i` to install front end library files. **Note**: Check you are using the right version of NodeJS first with `nvm use`.
+3. Run `composer install`.
+4. Create a `./.env` file. (Example in root). Fill in environment, database etc. details.
+5. Point a web server at `./web`.
 
 ### Available build tasks
 
@@ -56,5 +55,3 @@ The following libraries have been used on the site:
 | :-- | :-- | :--
 | Flickity | Y | Interactive carousel component
 | Bootstrap | Y | CSS framework
-
-## Other Info
