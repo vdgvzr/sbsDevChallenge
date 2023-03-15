@@ -9,6 +9,7 @@ export default class App extends Component {
         super(props)
 
         this.state = {
+            loading: true,
             site: null,
             page: null
         }
@@ -20,19 +21,21 @@ export default class App extends Component {
     componentDidMount() {
         /* Get site globals */
         axios.get("/site.json").then((response) => {
-            const site = response.data;
-            this.setState({ site });
+            const site = response.data
+            this.setState({ site })
+            this.setState({loading: false})
         }).catch((error) => {
-            console.error(error.message);
+            console.error(error.message)
         });
 
         /* Get singles */
         axios.get(this.path + '.json' + this.query).then((response) => {
-            const page = response.data;
-            this.setState({ page });
+            const page = response.data
+            this.setState({ page })
+            this.setState({loading: false})
         }).catch((error) => {
-            console.error(error.message);
-        });
+            console.error(error.message)
+        })
 
         setTimeout(() => {
             // handleScroll()
@@ -43,7 +46,7 @@ export default class App extends Component {
     render() {
         return(
             <Layout site={this.state.site}>
-                <Page page={this.state.page}/>
+                <Page page={this.state.page} loading={this.state.loading}/>
             </Layout>
         )
     }

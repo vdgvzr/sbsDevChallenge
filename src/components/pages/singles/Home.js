@@ -8,32 +8,40 @@ import TextWithImagePanel from "../../components/contentMain/TextWithImagePanel"
 import PartnerPanel from "../../components/contentMain/PartnerPanel"
 import PromisePanel from "../../components/contentMain/PromisePanel"
 
-const Home = ({ page }) => {
+const Home = ({ page, loading }) => {
     return(
         <>
             <HomepageHeader 
                 homepageHeader={page.homepageHeader}
+                loading={loading}
             />
             <IntroTextPanel 
                 contentMain={page.contentMain}
+                loading={loading}
             />
             <ProductsCarousel
                 contentMain={page.contentMain}
+                loading={loading}
             />
             <TestimonialCarousel
                 contentMain={page.contentMain}
+                loading={loading}
             />
             <CtaPanel
                 contentMain={page.contentMain}
+                loading={loading}
             />
             <TextWithImagePanel
                 contentMain={page.contentMain}
+                loading={loading}
             />
             <PartnerPanel
                 contentMain={page.contentMain}
+                loading={loading}
             />
             <PromisePanel
                 contentMain={page.contentMain}
+                loading={loading}
             />
         </>
     )
