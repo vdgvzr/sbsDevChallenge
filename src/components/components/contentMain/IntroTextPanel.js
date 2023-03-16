@@ -109,10 +109,10 @@ const IntroTextPanel = ({ contentMain }) => {
                         />
                     </div>
                 </div>
-                <div className="intro-text-panel__panel js-right" data-js-right></div>
+                <div className="intro-text-panel__panel js-right" data-js-right="right-scrolled"></div>
                 <div className="container h-100">
                     <div className="row align-items-center justify-content-end h-100">
-                        <div className="col-lg-6 col-10 p-5 intro-text-panel__panel-text js-fade" data-js-fade>
+                        <div className="col-lg-6 col-10 p-5 intro-text-panel__panel-text js-fade" data-js-fade="fade-scrolled">
                             <Heading heading={introTextPanel.introText} />
                             <p className="body-copy">{introTextPanel.subHeader}</p>
                         </div>

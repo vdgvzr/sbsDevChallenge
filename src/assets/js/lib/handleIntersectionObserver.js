@@ -2,16 +2,9 @@ import { addStyle } from "./handleClasses";
 
 export function handleIntersectionObserver() {
     const selectors = {
-        'jsFade': '[data-js-fade]',
-        'jsFadeDelay': '[data-js-fade-delay]',
-        'jsRight': '[data-js-right]',
-        'jsLeft': '[data-js-left]',
-    }
-
-    const classes = {
-        'fadeScrolled': 'fade-scrolled',
-        'rightScrolled': 'right-scrolled',
-        'leftScrolled': 'left-scrolled',
+        'jsFade': 'data-js-fade',
+        'jsRight': 'data-js-right',
+        'jsLeft': 'data-js-left',
     }
 
     const observerOptions = {
@@ -39,7 +32,10 @@ export function handleIntersectionObserver() {
         };
     }
 
-    intersectionObserver(selectors.jsFade, classes.fadeScrolled)
-    intersectionObserver(selectors.jsRight, classes.rightScrolled)
-    intersectionObserver(selectors.jsLeft, classes.leftScrolled)
+    Object.keys(selectors).forEach(key => {
+        const elements = document.querySelectorAll(`[${selectors[key]}]`)
+        elements.forEach(element => {
+            intersectionObserver(`[${selectors[key]}]`, element.getAttribute(`${selectors[key]}`))
+        })
+    });
 }
