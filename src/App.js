@@ -17,15 +17,14 @@ export default class App extends Component {
 
         this.path = window.location.pathname;
         this.query = window.location.search;
+        this.endpoints = [
+            '/site.json',
+            this.path + '.json' + this.query
+        ]
     }
 
     async componentDidMount() {
-        let endpoints = [
-            "/site.json",
-            this.path + '.json' + this.query
-        ]
-
-        axios.all(endpoints.map((endpoint) => axios.get(endpoint))).then(
+        axios.all(this.endpoints.map((endpoint) => axios.get(endpoint))).then(
             axios.spread(({data: site}, {data: page}) => {
                 this.setState({ site, page })
             })
@@ -36,7 +35,7 @@ export default class App extends Component {
         .catch((error) => {
             console.error(error.message)
             this.setState({ error: error.message })
-        });;
+        })
 
         setTimeout(() => {
             handleIntersectionObserver()
