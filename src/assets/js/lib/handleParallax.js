@@ -1,8 +1,10 @@
+// Function to handle main header icon cluster parallax
 export function parallax(container, icons) {
     return function executeOnEvent (event) {
         icons.forEach((icon, i) => {
             if (icon) {
                 window.requestAnimationFrame(() => {
+                    // Magic values used here for position here use because value attribute wasn't accebile from function abstraction
                     if (i % 2 === 0) {
                         i = i * 10
                     } else if (i % 2 === 1) {
@@ -14,6 +16,7 @@ export function parallax(container, icons) {
                     const iconRect = icon.getBoundingClientRect()
                     const position = i;
     
+
                     const mousePos = {
                         'x': event.pageX,
                         'y': event.pageY,
@@ -41,6 +44,7 @@ export function parallax(container, icons) {
     }
 }
 
+// Function to handle homepage header background image parallax
 export function imageParallax(container) {
     return function executeOnEvent (e) {
         e.preventDefault()
@@ -53,6 +57,7 @@ export function imageParallax(container) {
     }
 }
 
+// Function to handle scrolling parallax 
 export function parallaxY(container, icons) {
     return function executeOnEvent (e) {
         e.preventDefault()

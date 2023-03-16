@@ -10,6 +10,7 @@ export default class App extends Component {
 
         this.state = {
             loading: true,
+            error: null,
             site: null,
             page: null
         }
@@ -18,34 +19,33 @@ export default class App extends Component {
         this.query = window.location.search;
     }
 
-    componentDidMount() {
-        /* Get site globals */
-        axios.get("/site.json").then((response) => {
-            const site = response.data
-            this.setState({ site })
-            this.setState({loading: false})
-        }).catch((error) => {
-            console.error(error.message)
-        });
+    async componentDidMount() {
+        let endpoints = [
+            "/site.json",
+            this.path + '.json' + this.query
+        ]
 
-        /* Get singles */
-        axios.get(this.path + '.json' + this.query).then((response) => {
-            const page = response.data
-            this.setState({ page })
-            this.setState({loading: false})
-        }).catch((error) => {
+        axios.all(endpoints.map((endpoint) => axios.get(endpoint))).then(
+            axios.spread(({data: site}, {data: page}) => {
+                this.setState({ site, page })
+            })
+        )
+        .then(
+            this.setState({ loading: false })
+        )
+        .catch((error) => {
             console.error(error.message)
-        })
+            this.setState({ error: error.message })
+        });;
 
         setTimeout(() => {
-            // handleScroll()
             handleIntersectionObserver()
         }, [1000])
     }
 
     render() {
         return(
-            <Layout site={this.state.site}>
+            <Layout site={this.state.site} error={this.state.error}>
                 <Page page={this.state.page} loading={this.state.loading}/>
             </Layout>
         )

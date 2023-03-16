@@ -1,8 +1,9 @@
 import React from "react"
 import Nav from "../globals/Nav"
 import Footer from "../globals/Footer"
+import Error from "../globals/Error"
 
-const Layout = ({ children, site }) => {
+const Layout = ({ children, site, error }) => {
     return(
         <>
             <div className="container-fluid p-0 g-0">
@@ -10,9 +11,16 @@ const Layout = ({ children, site }) => {
                     <header className="">
                         <Nav site={site} />
                     </header>
-                    <main className="">
-                        {children}
-                    </main>
+                        {error !== null
+                        ?
+                        <main className="">
+                            <Error error={error}/>
+                        </main>
+                        :
+                        <main className="">
+                            {children}
+                        </main>
+                        }
                     <footer className="">
                         <Footer 
                             site={site}
