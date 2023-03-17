@@ -31,7 +31,7 @@ const CtaPanel = ({ contentMain }) => {
                         width="500px" 
                         position="absolute"
                         top="5%"
-                        left="80%"
+                        left="75%"
                         zIndex="1"
                         value="5"
                         ref={ref=>icons.current.push(ref)}
@@ -44,7 +44,7 @@ const CtaPanel = ({ contentMain }) => {
                         width="500px" 
                         position="absolute"
                         top="35%"
-                        left="14%"
+                        left="20%"
                         zIndex="1"
                         value="10"
                         ref={ref=>icons.current.push(ref)}

@@ -90,7 +90,7 @@ const IntroTextPanel = ({ contentMain }) => {
                             height="400px" 
                             width="400px" 
                             position="absolute"
-                            top="-50%"
+                            top="-25%"
                             right="51%"
                             value="100"
                             ref={ref=>icons.current.push(ref)}
