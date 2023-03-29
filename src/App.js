@@ -17,6 +17,7 @@ export default class App extends Component {
 
         this.path = window.location.pathname;
         this.query = window.location.search;
+        this.baseUrl = process.env.REACT_APP_SITE_URL
         this.endpoints = [
             '/site.json',
             this.path + '.json' + this.query
@@ -27,7 +28,7 @@ export default class App extends Component {
         let token = localStorage.getItem("token")
         axios.defaults.headers.common['Authorization'] = token
 
-        axios.all(this.endpoints.map((endpoint) => axios.get(endpoint))).then(
+        axios.all(this.endpoints.map((endpoint) => axios.get(this.baseUrl + endpoint))).then(
             axios.spread(({data: site}, {data: page}) => {
                 this.setState({ site, page })
             })
