@@ -24,6 +24,9 @@ export default class App extends Component {
     }
 
     async componentDidMount() {
+        let token = localStorage.getItem("token")
+        axios.defaults.headers.common['Authorization'] = token
+
         axios.all(this.endpoints.map((endpoint) => axios.get(endpoint))).then(
             axios.spread(({data: site}, {data: page}) => {
                 this.setState({ site, page })

@@ -4,7 +4,7 @@ export function parallax(container, icons) {
         icons.forEach((icon, i) => {
             if (icon) {
                 window.requestAnimationFrame(() => {
-                    // Magic values used here for position here use because value attribute wasn't accebile from function abstraction
+                    // Magic values used here for position here use because value attribute wasn't accessible from function abstraction
                     if (i % 2 === 0) {
                         i = i * 10
                     } else if (i % 2 === 1) {
